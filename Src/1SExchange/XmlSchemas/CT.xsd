@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:simpleType name="RussianDate">
+    <xs:restriction base="xs:string">
+      <!-- dd.MM.yyyy -->
+      <xs:pattern value="\d{2}\.\d{2}\.\d{4}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="Contract">
+		<xs:complexType>
+			<xs:attribute name="Id" type="xs:int" use="required" />
+			<xs:attribute name="Client1SCode" type="xs:string" use="required" />
+			<xs:attribute name="ContractNumber" type="xs:string" use="required" />
+			<xs:attribute name="RentalServiceId" type="xs:int" use="required" />
+			<xs:attribute name="Name" type="xs:string" use="required" />
+			<xs:attribute name="IsCashless" type="xs:boolean" use="required" />
+			<xs:attribute name="PlacePrice" type="xs:decimal" use="required" />
+			<xs:attribute name="Places" type="xs:string" use="required" />
+      
+      <xs:attribute name="CreationDate" type="RussianDate" use="required"/>
+      <xs:attribute name="DateFrom" type="RussianDate" use="required"/>
+      <xs:attribute name="DateTo" type="RussianDate" use="required"/>
+      <xs:attribute name="DissolutionDate" type="RussianDate" use="required"/>
+
+    </xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="RussianDate">
+    <xs:restriction base="xs:string">
+      <!-- dd.MM.yyyy -->
+      <xs:pattern value="\d{2}\.\d{2}\.\d{4}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="ServicePayment">
+    <xs:complexType>
+      <xs:attribute name="Id" type="xs:int" use="required" />
+      <xs:attribute name="DateTime" type="RussianDate" use="required"/>
+      <xs:attribute name="TerminalId" type="xs:int" use="required" />
+      <xs:attribute name="Service1SCode">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="9"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <!-- Разделитель точка (.) -->
+      <xs:attribute name="PaidSum" type="xs:decimal" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="ImportResult">
+		<xs:complexType>
+      <xs:sequence>
+				<xs:element name="Object">
+					<xs:complexType>
+						<xs:attribute name="type" type="xs:string" use="required" />
+						<xs:attribute name="id" type="xs:int" use="required" />
+						<xs:attribute name="type1s" type="xs:string" use="required" />
+						<xs:attribute name="code1s" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Status">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attribute name="code" type="xs:int" use="required" />
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+      </xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
