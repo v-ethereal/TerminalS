@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>c166b2a4-d0a2-42e3-84a5-c5ca33ab0730</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>21cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="FromDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=DateTime.Now</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>FromDate</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ToDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=DateTime.Now</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ToDate</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>29.7cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2cm</RightMargin>
+  <LeftMargin>2cm</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox2">
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <Top>0.75cm</Top>
+        <Width>25.5cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>(Х - оплаченный день)</Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <rd:DefaultName>textbox7</rd:DefaultName>
+        <Width>25.5cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>="Сводная таблица оплат за период c " + FormatDateTime(Parameters!FromDate.Value, DateFormat.ShortDate) + " по " + FormatDateTime(Parameters!ToDate.Value, DateFormat.ShortDate)</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>1.5cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>2cm</BottomMargin>
+  <rd:ReportID>e03b4087-89f1-43d8-b9a5-1e954de7dc8b</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="cross">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYyLjYx8kjkpgAAAdlJREFUOE+Vk2FL21AUhmUwCPu8IWNjG0URF7pWSttlarNEs6ZVUzOatY2r0ckc++SvKlgKhhDCJYFw/ljKu3sDdZa2goGQSzjP8957TrK29sTrmJwXK5Fe6r3vpxfyqgIjbsuHsXWjMqOxUCPgAZ2jnw7RTYcLEiPuyK24g5O4i71Qv62Hu9v3khns0RXO0ysucNGJ+/cSAZuxBTsZYMhrxLoa7N949OdZLuELiUPTn+klftNfuKkHK+lCbFnARnyUw2d0gSazUAmUbJMqz+eO8YNM6TRxsl56hku6hpO4aMU2DHYE/p7Dv/K1gMsjRVraJ5O+S/ycmZ304HHJkEMidcBvg508Ds+MQnLAWlMBHlIbOpno8ebuBPXpyuSH29Gjb/IB36qYyFdqQiUDXXJRDRuQ/drKEecOPTrO4XZyCof4OGmQwzZ/qsxEMahhY1JaLpmHXeishbKvZEW/NlUiFRY5+MJ0bPk7eDf5OC8RsM6aebJI5F8aSn4977a4Nyefskq4hzbZqEUNFO5kvLp9+1+yHzU1kWhywUN41pvCaF36MN7OyqGCz0zDxl0RL8dvtLlRVoNdTQlVkby02+ujgvR6XMiWwjNTyVe0x0YlJAvJT/ybF8r/AY8CEkbxD4/rAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <PageWidth>29.7cm</PageWidth>
+  <DataSets>
+    <DataSet Name="Arsis_RentalSystem_AdministrationConsole_DAL_PayLogRecord">
+      <Fields>
+        <Field Name="ContractNumber">
+          <DataField>ContractNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Date">
+          <DataField>Date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="IsPayed">
+          <DataField>IsPayed</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="RentalFee">
+          <DataField>RentalFee</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="RentalPropertyNumber">
+          <DataField>RentalPropertyNumber</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsPaid">
+          <DataField>IsPaid</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Rate">
+          <DataField>Rate</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="PaidSum">
+          <DataField>PaidSum</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="RentalPlaceNumber">
+          <DataField>RentalPlaceNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Arsis.RentalSystem.AdministrationConsole.DAL</rd:DataSetName>
+        <rd:TableName>PayLogRecord</rd:TableName>
+        <rd:ObjectDataSourceType>Arsis.RentalSystem.AdministrationConsole.DAL.PayLogRecord, Arsis.RentalSystem.AdministrationConsole.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a92f898dea809186</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>25.53968cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Matrix Name="matrix1">
+        <MatrixColumns>
+          <MatrixColumn>
+            <Width>0.75cm</Width>
+          </MatrixColumn>
+        </MatrixColumns>
+        <DataSetName>Arsis_RentalSystem_AdministrationConsole_DAL_PayLogRecord</DataSetName>
+        <RowGroupings>
+          <RowGrouping>
+            <Width>1.75cm</Width>
+            <DynamicRows>
+              <Grouping Name="matrix1_RentalPropertyNumber">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!RentalPlaceNumber.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Sorting>
+                <SortBy>
+                  <SortExpression>=CInt(Fields!RentalPlaceNumber.Value)</SortExpression>
+                  <Direction>Ascending</Direction>
+                </SortBy>
+              </Sorting>
+              <ReportItems>
+                <Textbox Name="RentalPropertyNumber">
+                  <rd:DefaultName>RentalPropertyNumber</rd:DefaultName>
+                  <Style>
+                    <BorderColor>
+                      <Right>Black</Right>
+                    </BorderColor>
+                    <BorderStyle>
+                      <Default>Solid</Default>
+                      <Right>Solid</Right>
+                    </BorderStyle>
+                    <BorderWidth>
+                      <Right>1pt</Right>
+                    </BorderWidth>
+                    <FontWeight>700</FontWeight>
+                    <TextAlign>Center</TextAlign>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                  <ZIndex>1</ZIndex>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!RentalPlaceNumber.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicRows>
+          </RowGrouping>
+        </RowGroupings>
+        <ColumnGroupings>
+          <ColumnGrouping>
+            <Height>0.63492cm</Height>
+            <DynamicColumns>
+              <Grouping Name="matrix1_Date">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Date.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="Date">
+                  <rd:DefaultName>Date</rd:DefaultName>
+                  <Style>
+                    <BorderColor>
+                      <Bottom>Black</Bottom>
+                    </BorderColor>
+                    <BorderStyle>
+                      <Default>Solid</Default>
+                      <Bottom>Solid</Bottom>
+                    </BorderStyle>
+                    <BorderWidth>
+                      <Bottom>1pt</Bottom>
+                    </BorderWidth>
+                    <FontWeight>700</FontWeight>
+                    <Format>="dd MMM"</Format>
+                    <TextAlign>Center</TextAlign>
+                    <PaddingLeft>0.5pt</PaddingLeft>
+                    <PaddingRight>0.5pt</PaddingRight>
+                    <PaddingTop>0.5pt</PaddingTop>
+                    <PaddingBottom>0.5pt</PaddingBottom>
+                  </Style>
+                  <ZIndex>2</ZIndex>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!Date.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicColumns>
+          </ColumnGrouping>
+        </ColumnGroupings>
+        <Width>2.5cm</Width>
+        <Corner>
+          <ReportItems>
+            <Textbox Name="textbox1">
+              <rd:DefaultName>textbox1</rd:DefaultName>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                  <Left>None</Left>
+                  <Top>None</Top>
+                </BorderStyle>
+                <FontWeight>700</FontWeight>
+                <TextAlign>Center</TextAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+              <ZIndex>3</ZIndex>
+              <CanGrow>true</CanGrow>
+              <Value>Место №</Value>
+            </Textbox>
+          </ReportItems>
+        </Corner>
+        <MatrixRows>
+          <MatrixRow>
+            <Height>0.75cm</Height>
+            <MatrixCells>
+              <MatrixCell>
+                <ReportItems>
+                  <Rectangle Name="rectangle1">
+                    <ReportItems>
+                      <Image Name="image1">
+                        <Sizing>FitProportional</Sizing>
+                        <Visibility>
+                          <Hidden>=IIF(IsNothing(Fields!IsPaid.Value), true, Not(Fields!IsPaid.Value))</Hidden>
+                        </Visibility>
+                        <MIMEType>image/png</MIMEType>
+                        <Source>Embedded</Source>
+                        <Style />
+                        <Value>cross</Value>
+                      </Image>
+                    </ReportItems>
+                    <Style>
+                      <BorderStyle>
+                        <Default>Solid</Default>
+                      </BorderStyle>
+                    </Style>
+                  </Rectangle>
+                </ReportItems>
+              </MatrixCell>
+            </MatrixCells>
+          </MatrixRow>
+        </MatrixRows>
+      </Matrix>
+    </ReportItems>
+    <Height>1.38492cm</Height>
+  </Body>
+  <Language>ru</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox3">
+        <rd:DefaultName>textbox3</rd:DefaultName>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Value>="Страница " + CStr(Globals!PageNumber) + " из " + CStr(Globals!TotalPages)</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.63492cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>2cm</TopMargin>
+  <PageHeight>21cm</PageHeight>
+</Report>

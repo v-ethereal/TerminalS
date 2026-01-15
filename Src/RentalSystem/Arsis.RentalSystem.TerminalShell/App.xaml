@@ -1,0 +1,25 @@
+﻿<Application x:Class="Arsis.RentalSystem.TerminalShell.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        
+    ShutdownMode="OnMainWindowClose"
+    DispatcherUnhandledException="App_DispatcherUnhandledException"
+    Exit="App_Exit">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ButtonResourceDictionary.xaml"/>
+                <ResourceDictionary Source="TextBoxResourceDictionary.xaml"/>
+                <ResourceDictionary Source="UserControls/DatePicker.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <LinearGradientBrush x:Key="PageBackgroundGradientBrush" StartPoint="0,0.5" EndPoint="0,1" SpreadMethod="Pad" MappingMode="RelativeToBoundingBox">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Color="#FF57AFED" Offset="0"/>
+                    <GradientStop Color="#FF6AB8EF" Offset="0.10"/>
+                    <GradientStop Color="#FF7EC2F1" Offset="0.215"/>
+                    <GradientStop Color="#FFABD7F6" Offset="0.335"/>
+                    <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

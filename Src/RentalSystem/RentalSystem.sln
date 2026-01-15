@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{436A7E30-C837-499F-AE18-3CD3B938F540}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\TermClasses.dll = Libs\TermClasses.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridViewExtensions", "Libs\GridExtensions\GridViewExtensions.csproj", "{E5247765-0134-4714-A110-64D571FBF636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arsis.RentalSystem.TerminalShell.BLL", "Arsis.RentalSystem.TerminalShell.BLL\Arsis.RentalSystem.TerminalShell.BLL.csproj", "{2CC88994-A53D-4BB3-844B-4643AFB75812}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B7998160-5F1E-4ED7-B4C6-98601FDB2A51} = {B7998160-5F1E-4ED7-B4C6-98601FDB2A51}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arsis.RentalSystem.Core", "Arsis.RentalSystem.Core\Arsis.RentalSystem.Core.csproj", "{BC6173B5-4B65-4445-8ECC-D55D925BECA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arsis.RentalSystem.TerminalShell", "Arsis.RentalSystem.TerminalShell\Arsis.RentalSystem.TerminalShell.csproj", "{33BE8991-CE64-494C-AE68-8CF4664EE5E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arsis.RentalSystem.AdministrationConsole.BLL", "Arsis.RentalSystem.AdministrationConsole.BLL\Arsis.RentalSystem.AdministrationConsole.BLL.csproj", "{BF44F403-D149-42B9-9C98-E7230DBADF3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arsis.RentalSystem.AdministrationConsole", "Arsis.RentalSystem.AdministrationConsole\Arsis.RentalSystem.AdministrationConsole.csproj", "{39D97150-C155-4A0F-9BD6-790C4D5D03B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arsis.RentalSystem.TermClassesStub", "Arsis.RentalSystem.TermClassesStub\Arsis.RentalSystem.TermClassesStub.csproj", "{B7998160-5F1E-4ED7-B4C6-98601FDB2A51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordCleaner", "PasswordCleaner\PasswordCleaner.csproj", "{F05D5CE9-BB10-4872-AE70-5B771423FB4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5247765-0134-4714-A110-64D571FBF636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5247765-0134-4714-A110-64D571FBF636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5247765-0134-4714-A110-64D571FBF636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC88994-A53D-4BB3-844B-4643AFB75812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC88994-A53D-4BB3-844B-4643AFB75812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC88994-A53D-4BB3-844B-4643AFB75812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6173B5-4B65-4445-8ECC-D55D925BECA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6173B5-4B65-4445-8ECC-D55D925BECA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6173B5-4B65-4445-8ECC-D55D925BECA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BE8991-CE64-494C-AE68-8CF4664EE5E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33BE8991-CE64-494C-AE68-8CF4664EE5E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33BE8991-CE64-494C-AE68-8CF4664EE5E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BE8991-CE64-494C-AE68-8CF4664EE5E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF44F403-D149-42B9-9C98-E7230DBADF3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF44F403-D149-42B9-9C98-E7230DBADF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF44F403-D149-42B9-9C98-E7230DBADF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF44F403-D149-42B9-9C98-E7230DBADF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39D97150-C155-4A0F-9BD6-790C4D5D03B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D97150-C155-4A0F-9BD6-790C4D5D03B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D97150-C155-4A0F-9BD6-790C4D5D03B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D97150-C155-4A0F-9BD6-790C4D5D03B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7998160-5F1E-4ED7-B4C6-98601FDB2A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7998160-5F1E-4ED7-B4C6-98601FDB2A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7998160-5F1E-4ED7-B4C6-98601FDB2A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7998160-5F1E-4ED7-B4C6-98601FDB2A51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F05D5CE9-BB10-4872-AE70-5B771423FB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F05D5CE9-BB10-4872-AE70-5B771423FB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F05D5CE9-BB10-4872-AE70-5B771423FB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F05D5CE9-BB10-4872-AE70-5B771423FB4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E5247765-0134-4714-A110-64D571FBF636} = {436A7E30-C837-499F-AE18-3CD3B938F540}
+	EndGlobalSection
+EndGlobal

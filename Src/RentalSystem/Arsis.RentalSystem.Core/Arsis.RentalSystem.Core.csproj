@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC6173B5-4B65-4445-8ECC-D55D925BECA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Arsis.RentalSystem.Core</RootNamespace>
+    <AssemblyName>Arsis.RentalSystem.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>RentalSystem.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TermClasses, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Libs\TermClasses.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Bll\AppRuntime.cs" />
+    <Compile Include="Bll\BaseService.cs" />
+    <Compile Include="Bll\ComponentContainer.cs" />
+    <Compile Include="Bll\Enums.cs" />
+    <Compile Include="Bll\IComponentContainer.cs" />
+    <Compile Include="Bll\LoggingInterceptor.cs" />
+    <Compile Include="Bll\LoggingInterceptorSR.Designer.cs">
+      <DependentUpon>LoggingInterceptorSR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Bll\RentalSystemException.cs" />
+    <Compile Include="Bll\SpringContainer.cs" />
+    <Compile Include="Bll\UserServiceHelper.cs" />
+    <Compile Include="Dal\OdbcHelper.cs" />
+    <Compile Include="Dal\RentalSystemDal.cs" />
+    <Compile Include="Dal\SqlHelper.cs" />
+    <Compile Include="Domain\CashlessPayLogRecord.cs" />
+    <Compile Include="Domain\Contractor.cs" />
+    <Compile Include="Domain\ContractStateInformation.cs" />
+    <Compile Include="Domain\ParkingTicketInfo.cs" />
+    <Compile Include="Domain\PayDateInformation.cs" />
+    <Compile Include="Domain\PayLogRecord.cs" />
+    <Compile Include="Domain\PriceListRecord.cs" />
+    <Compile Include="Domain\RentalPayLogRecord.cs" />
+    <Compile Include="Domain\RentalPlaceHistoryRecord.cs" />
+    <Compile Include="Domain\RentalPlaceInformationExt.cs" />
+    <Compile Include="Domain\RentalSystem.designer.cs">
+      <DependentUpon>RentalSystem.dbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Domain\ReportParameterNames.cs" />
+    <Compile Include="Domain\ReportTypes.cs" />
+    <Compile Include="Domain\ServiceInformationExt.cs" />
+    <Compile Include="Domain\ServicePayLogRecord.cs" />
+    <Compile Include="Domain\TerminalInformation.cs" />
+    <Compile Include="Domain\RentalPlaceInformation.cs" />
+    <Compile Include="Domain\RentalTransactionInformation.cs" />
+    <Compile Include="Domain\ServiceInformation.cs" />
+    <Compile Include="Domain\ServiceSummary.cs" />
+    <Compile Include="Domain\ServiceTransactionInformation.cs" />
+    <Compile Include="Helpers\XmlUtility.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CommonHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Domain\RentalSystem.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>RentalSystem.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Domain\RentalSystem.dbml.layout">
+      <DependentUpon>RentalSystem.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RentalSystem.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bll\LoggingInterceptorSR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoggingInterceptorSR.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

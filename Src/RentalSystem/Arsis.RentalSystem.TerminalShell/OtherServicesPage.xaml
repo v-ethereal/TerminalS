@@ -1,0 +1,22 @@
+﻿<Page x:Class="Arsis.RentalSystem.TerminalShell.OtherServicesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:UserControls="clr-namespace:Arsis.RentalSystem.TerminalShell.UserControls"
+    Title="OtherServicesPage"
+    Background="{DynamicResource PageBackgroundGradientBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Label VerticalAlignment="Top" Content="Выберите услугу для оплаты" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Foreground="#FFFFFFFF" Height="58" />
+        <UserControls:ButtonsMultipageContainer x:Name="workPanel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" Width="Auto" Height="Auto" Grid.Row="1">
+        </UserControls:ButtonsMultipageContainer>
+        <Grid Grid.Row="2" Background="Black" Height="1"/>
+        <Grid Grid.Row="3" Background="Transparent">
+            <Button HorizontalAlignment="Left" x:Name="btnBack" Style="{DynamicResource BackButtonStyle}"  VerticalAlignment="Center" Click="btnBack_Click" />
+        </Grid>
+    </Grid>
+</Page>

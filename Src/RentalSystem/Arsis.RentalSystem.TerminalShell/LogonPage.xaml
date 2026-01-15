@@ -1,0 +1,26 @@
+﻿<Page x:Class="Arsis.RentalSystem.TerminalShell.LogonPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LogonPage"    
+    xmlns:Arsis_RentalSystem_TerminalApp_UserControls="clr-namespace:Arsis.RentalSystem.TerminalShell.UserControls"	
+    Background="{DynamicResource PageBackgroundGradientBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Label Content="Введите логин" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Foreground="#FFFFFFFF"/>
+            <Label x:Name="lblInfo" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Foreground="Red"/>
+        </StackPanel>
+        <Arsis_RentalSystem_TerminalApp_UserControls:VirtualKeyboard x:Name="kbrdLogin" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Grid Background="Black" Grid.Row="2" />
+        <Grid Grid.Row="3" Background="Transparent">
+            <Button HorizontalAlignment="Left" x:Name="btnCancel" Style="{DynamicResource BackButtonStyle}"  VerticalAlignment="Center" Click="btnCancel_Click" />
+            <Button x:Name="btnProceed" Style="{DynamicResource NextButtonStyle}"  HorizontalAlignment="Right" Click="btnProceed_Click" />
+        </Grid>
+    </Grid>
+</Page>

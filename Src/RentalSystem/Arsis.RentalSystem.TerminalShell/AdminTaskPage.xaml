@@ -1,0 +1,40 @@
+<Page x:Class="Arsis.RentalSystem.TerminalShell.AdminTaskPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="{DynamicResource PageBackgroundGradientBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Label HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="Выберите необходимую операцию" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Foreground="#FFFFFFFF"/>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnXReport" Grid.Column="0" Content="X-отчет" Style="{DynamicResource MenuButtonStyle}" Click="btnXReport_Click" FontSize="32"/>
+            <Button x:Name="RentalPayReportToday" Grid.Column="1" Style="{DynamicResource MenuButtonStyle}" Click="RentalPayReportToday_Click" Content="Неоплаченные места (сегодня)" FontSize="32">
+            </Button>
+            <Button x:Name="btnZReport" Grid.Row="1" Grid.Column="0" Content="Z-отчет" Style="{DynamicResource MenuButtonStyle}" Click="btnZReport_Click" FontSize="32"/>
+            <Button x:Name="RentalPayReport" Grid.Row="1" Grid.Column="1" Style="{DynamicResource MenuButtonStyle}" Click="RentalPayReport_Click" Content="Неоплаченные места (произвольный день)" FontSize="32">
+            </Button>
+            <Button x:Name="btnZeroReceipt" Grid.Row="2" Grid.Column="0" Style="{DynamicResource MenuButtonStyle}" Click="btnZeroReceipt_Click" Content="Нулевой чек" FontSize="32">
+            </Button>
+            <Button x:Name="btnCloseApp" Grid.Row="2" Grid.Column="1" Style="{DynamicResource MenuButtonStyle}" Click="btnCloseApp_Click" Content="Выход в ОС" FontSize="32" >
+            </Button>
+            <Button x:Name="btnImportCardAccounts" Grid.Row="3" Grid.Column="0" Style="{DynamicResource MenuButtonStyle}" Click="btnImportCardAccounts_Click" Content="Импорт тарифов карт" FontSize="32" >
+            </Button>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Button HorizontalAlignment="Left" x:Name="btnLogoff" Style="{DynamicResource BackButtonStyle}"  VerticalAlignment="Center" Click="btnLogoff_Click" />
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,12 @@
+﻿<Window x:Class="Arsis.RentalSystem.TerminalShell.TakeDialogWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TakeDialogWindow" ShowInTaskbar="False" WindowStyle="None"
+    Background="{DynamicResource PageBackgroundGradientBrush}" WindowStartupLocation="CenterScreen" WindowState="Maximized" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <TextBlock  Name="PrimaryMessage" FontSize="48" Text="Пожалуйста, возьмите Вашу парковочную карту" HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="#FF19147D" />
+            <Label x:Name="lblRedirectionTimer" Content="1 сек." HorizontalAlignment="Center"  VerticalAlignment="Center"  FontSize="30" Foreground="#FF19147D" Height="60" Width="121" HorizontalContentAlignment="Center" />
+        </StackPanel>
+    </Grid>
+</Window>

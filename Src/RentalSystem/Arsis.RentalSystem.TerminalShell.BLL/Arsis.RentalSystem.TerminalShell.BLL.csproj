@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CC88994-A53D-4BB3-844B-4643AFB75812}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Arsis.RentalSystem.TerminalShell.BLL</RootNamespace>
+    <AssemblyName>Arsis.RentalSystem.TerminalShell.BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>RentalSystem.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>CARDSTUB</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CardsManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\CardsManager.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.1.2.20125, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TermClasses, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\TermClasses.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Interface\IBanknoteAcceptor.cs" />
+    <Compile Include="BanknoteAcceptorEventArgs.cs" />
+    <Compile Include="Interface\IBarCodeScannerService.cs" />
+    <Compile Include="Interface\ICardReaderService.cs" />
+    <Compile Include="Interface\IFiscalRegister.cs" />
+    <Compile Include="Interface\IParkingService.cs" />
+    <Compile Include="Interface\IRentalPlaceService.cs" />
+    <Compile Include="Interface\ITransactionService.cs" />
+    <Compile Include="Interface\IUserService.cs" />
+    <Compile Include="Services\BarCodeScannerService.cs" />
+    <Compile Include="Interface\IServicesService.cs" />
+    <Compile Include="Interface\IRentalFeeService.cs" />
+    <Compile Include="Interface\ITerminalService.cs" />
+    <Compile Include="Services\BanknoteAcceptor.cs" />
+    <Compile Include="Services\CardReaderService.cs" />
+    <Compile Include="Services\CustomizationDataService.cs" />
+    <Compile Include="Services\FiscalRegister.cs" />
+    <Compile Include="Services\ParkingService.cs" />
+    <Compile Include="Services\RentalPlaceService.cs" />
+    <Compile Include="Services\ServicesService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\RentalFeeService.cs" />
+    <Compile Include="Services\TransactionService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Services\TerminalService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RentalSystem.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arsis.RentalSystem.Core\Arsis.RentalSystem.Core.csproj">
+      <Project>{BC6173B5-4B65-4445-8ECC-D55D925BECA1}</Project>
+      <Name>Arsis.RentalSystem.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arsis.RentalSystem.TermClassesStub\Arsis.RentalSystem.TermClassesStub.csproj">
+      <Project>{B7998160-5F1E-4ED7-B4C6-98601FDB2A51}</Project>
+      <Name>Arsis.RentalSystem.TermClassesStub</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

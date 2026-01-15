@@ -1,0 +1,118 @@
+﻿<Page x:Class="Arsis.RentalSystem.TerminalShell.ReportDateSelectPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Arsis_RentalSystem_TerminalApp_UserControls="clr-namespace:Arsis.RentalSystem.TerminalShell.UserControls"	
+    Title="ReportDateSelectPage"
+    Background="{DynamicResource PageBackgroundGradientBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Label Content="Выберите дату" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Foreground="#FFFFFFFF"/>
+        <Arsis_RentalSystem_TerminalApp_UserControls:DatePicker Margin="10,10,10,10" Width="645" x:Name="datePicker" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" >
+            <Arsis_RentalSystem_TerminalApp_UserControls:DatePicker.DayHeaderTemplate>
+                <DataTemplate>
+                    <Border Background="Blue">
+                        <TextBlock Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Text="{Binding}" FontSize="36"/>
+                    </Border>
+                </DataTemplate>
+            </Arsis_RentalSystem_TerminalApp_UserControls:DatePicker.DayHeaderTemplate>
+            <Arsis_RentalSystem_TerminalApp_UserControls:DatePicker.DayCellTemplate>
+                <DataTemplate>
+                    <Border Name="border" BorderThickness="2,2,2,2" BorderBrush="{StaticResource ButtonBorder}" Width="85" Height="85" CornerRadius="2,2,2,2">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Text="{Binding DayNumber}" Name="dayCell"/>
+                    </Border>
+                    <DataTemplate.Triggers>
+                        <DataTrigger Binding="{Binding RelativeSource={
+                                                    RelativeSource AncestorType={x:Type ListBoxItem}},
+                                                    Path=IsSelected}"
+                                         Value="True">
+                            <Setter Property="Background" Value="Blue" TargetName="border"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsEnabled}" Value="False">
+                            <Setter Property="Background" Value="Gray" TargetName="border"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsInCurrentMonth}" Value="False">
+                            <Setter Property="Foreground" Value="Gray" TargetName="dayCell"/>
+                        </DataTrigger>
+                    </DataTemplate.Triggers>
+                </DataTemplate>
+            </Arsis_RentalSystem_TerminalApp_UserControls:DatePicker.DayCellTemplate>
+            <Arsis_RentalSystem_TerminalApp_UserControls:DatePicker.MonthBackButtonStyle>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border BorderBrush="WhiteSmoke" Width="85" BorderThickness="2" CornerRadius="2,2,2,2">
+                                    <TextBlock>
+                                        <Path Stretch="Fill" Width="85" Height="85" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center" Stroke="#FF000000" Data="M19.5,0.5 L19.5,19.5 0.5,19.5 z" >
+                                            <Path.Fill>
+                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                    <GradientStop Color="#FFDCC83C" Offset="0"/>
+                                                    <GradientStop Color="#FF97FF0A" Offset="0.5"/>
+                                                    <GradientStop Color="#FFC8B900" Offset="1"/>
+                                                </LinearGradientBrush>
+                                            </Path.Fill>
+                                            <Path.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform ScaleX="0.5" ScaleY="0.5" />
+                                                    <RotateTransform Angle="-225"/>
+                                                </TransformGroup>
+                                            </Path.RenderTransform>
+                                        </Path>
+                                    </TextBlock>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <EventTrigger RoutedEvent="ButtonBase.Click">
+                                        <SoundPlayerAction Source="Media\type.wav" />
+                                    </EventTrigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Arsis_RentalSystem_TerminalApp_UserControls:DatePicker.MonthBackButtonStyle>
+            <Arsis_RentalSystem_TerminalApp_UserControls:DatePicker.MonthForwardButtonStyle>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border BorderBrush="WhiteSmoke" Width="85" BorderThickness="2" CornerRadius="2,2,2,2">
+                                    <TextBlock>
+                                        <Path Stretch="Fill" Width="85" Height="85" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center" Stroke="#FF000000" Data="M19.5,0.5 L19.5,19.5 0.5,19.5 z" >
+                                            <Path.Fill>
+                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                    <GradientStop Color="#FFDCC83C" Offset="0"/>
+                                                    <GradientStop Color="#FF97FF0A" Offset="0.5"/>
+                                                    <GradientStop Color="#FFC8B900" Offset="1"/>
+                                                </LinearGradientBrush>
+                                            </Path.Fill>
+                                            <Path.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform ScaleX="0.5" ScaleY="0.5" />
+                                                    <RotateTransform Angle="-45"/>
+                                                </TransformGroup>
+                                            </Path.RenderTransform>
+                                        </Path>
+                                    </TextBlock>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <EventTrigger RoutedEvent="ButtonBase.Click">
+                                        <SoundPlayerAction Source="Media\type.wav" />
+                                    </EventTrigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Arsis_RentalSystem_TerminalApp_UserControls:DatePicker.MonthForwardButtonStyle>
+        </Arsis_RentalSystem_TerminalApp_UserControls:DatePicker>
+
+        <Grid Grid.Row="2">
+            <Button HorizontalAlignment="Left" x:Name="btnCancel" Style="{DynamicResource BackButtonStyle}"  VerticalAlignment="Center" Click="btnCancel_Click" />
+            <Button x:Name="btnProceed" Style="{DynamicResource NextButtonStyle}"  HorizontalAlignment="Right" Click="btnProceed_Click" />
+        </Grid>
+    </Grid>
+</Page>

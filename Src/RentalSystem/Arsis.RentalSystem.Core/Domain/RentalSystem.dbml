@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="RentalSystem" Class="RentalSystemDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost\sqlexpress;Initial Catalog=RentalSystem;Integrated Security=True" SettingsObjectName="Arsis.RentalSystem.Core.Properties.Settings" SettingsPropertyName="RentalSystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ContractRentalPlaces" Member="ContractRentalPlaces">
+    <Type Name="ContractRentalPlace">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContractId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RentalPlaceId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateFrom" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTo" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ContractRentalPlace_ContractUnpayablePeriod" Member="ContractUnpayablePeriods" OtherKey="ContractRentalPlacesId" Type="ContractUnpayablePeriod" />
+      <Association Name="ContractRentalPlace_RentalPayment" Member="RentalPayments" OtherKey="ContractPlaceId" Type="RentalPayment" />
+      <Association Name="RentalPlace_ContractRentalPlace" Member="RentalPlace" ThisKey="RentalPlaceId" Type="RentalPlace" IsForeignKey="true" />
+      <Association Name="Contract_ContractRentalPlace" Member="Contract" ThisKey="ContractId" Type="Contract" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CustomizationData" Member="CustomizationDatas">
+    <Type Name="CustomizationData">
+      <Column Name="[Key]" Member="Key" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HolidayDictionary" Member="HolidayDictionaries">
+    <Type Name="HolidayDictionary">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RentalPlaces" Member="RentalPlaces">
+    <Type Name="RentalPlace">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Number" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="RentalPlace_ContractRentalPlace" Member="ContractRentalPlaces" OtherKey="RentalPlaceId" Type="ContractRentalPlace" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roles" Member="Roles">
+    <Type Name="Role">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="Role_UserRole" Member="UserRoles" OtherKey="RoleId" Type="UserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRoles" Member="UserRoles">
+    <Type Name="UserRole">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Role_UserRole" Member="Role" ThisKey="RoleId" Type="Role" IsForeignKey="true" />
+      <Association Name="User_UserRole" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PriceList" Member="PriceLists">
+    <Type Name="PriceList">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="ValidFrom" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Service_PriceList" Member="Service" ThisKey="ServiceId" Type="Service" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContractUnpayablePeriods" Member="ContractUnpayablePeriods">
+    <Type Name="ContractUnpayablePeriod">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContractRentalPlacesId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BeginDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Reason" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="ContractRentalPlace_ContractUnpayablePeriod" Member="ContractRentalPlace" ThisKey="ContractRentalPlacesId" Type="ContractRentalPlace" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Terminals" Member="Terminals">
+    <Type Name="Terminal">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NetworkName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ShiftNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Terminal_ServicePayment" Member="ServicePayments" OtherKey="TerminalId" Type="ServicePayment" />
+      <Association Name="Terminal_ServicePaymentDailySummary" Member="ServicePaymentDailySummaries" OtherKey="TerminalId" Type="ServicePaymentDailySummary" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RentalPayments" Member="RentalPayments">
+    <Type Name="RentalPayment">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TerminalId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContractId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContractPlaceId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PaidSum" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ShiftNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="StatusDatetime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StatusMessage" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Payment1SCode" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Association Name="ContractRentalPlace_RentalPayment" Member="ContractRentalPlace" ThisKey="ContractPlaceId" Type="ContractRentalPlace" IsForeignKey="true" />
+      <Association Name="Contract_RentalPayment" Member="Contract" ThisKey="ContractId" Type="Contract" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contracts" Member="Contracts">
+    <Type Name="Contract">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContractNumber" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="CrDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CrUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateFrom" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTo" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RentalServiceId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ClientName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="INN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DissolutionDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsCashless" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CashlessPaymentControlDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PassportNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PassportOutletOrgan" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="IsJuridicalPerson" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PlacePrice" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="ChDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ChUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Contract1SCode" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="StatusDatetime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ClientAddress" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ClientPostAddress" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ClientPhone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PassportSeries" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PassportOutletDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Client1SCode" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="StatusMessage" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="Contract_ContractRentalPlace" Member="ContractRentalPlaces" OtherKey="ContractId" Type="ContractRentalPlace" />
+      <Association Name="Contract_RentalPayment" Member="RentalPayments" OtherKey="ContractId" Type="RentalPayment" />
+      <Association Name="Contract_RentalCashlessPayment" Member="RentalCashlessPayments" OtherKey="ContractId" Type="RentalCashlessPayment" />
+      <Association Name="Contract_ContractHistory" Member="ContractHistories" OtherKey="ContractId" Type="ContractHistory" />
+      <Association Name="Service_Contract" Member="Service" ThisKey="RentalServiceId" Type="Service" IsForeignKey="true" />
+      <Association Name="User_Contract" Member="User" ThisKey="ChUserId" Type="User" IsForeignKey="true" />
+      <Association Name="User_Contract1" Member="User1" ThisKey="CrUserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServicePayments" Member="ServicePayments">
+    <Type Name="ServicePayment">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TerminalId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="PaidSum" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ShiftNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DailySummaryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlaceNumber" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="ServicePayment_ParkingServicePayment" Member="ParkingServicePayments" OtherKey="ServicePaymentsId" Type="ParkingServicePayment" />
+      <Association Name="Terminal_ServicePayment" Member="Terminal" ThisKey="TerminalId" Type="Terminal" IsForeignKey="true" />
+      <Association Name="ServicePaymentDailySummary_ServicePayment" Member="ServicePaymentDailySummary" ThisKey="DailySummaryId" Type="ServicePaymentDailySummary" IsForeignKey="true" />
+      <Association Name="Service_ServicePayment" Member="Service" ThisKey="ServiceId" Type="Service" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServicePaymentDailySummary" Member="ServicePaymentDailySummaries">
+    <Type Name="ServicePaymentDailySummary">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TerminalId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Service1SCode" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="PaidSum" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="StatusDatetime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StatusMessage" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Payment1SCode" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="ShiftNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ServicePaymentDailySummary_ServicePayment" Member="ServicePayments" OtherKey="DailySummaryId" Type="ServicePayment" />
+      <Association Name="Terminal_ServicePaymentDailySummary" Member="Terminal" ThisKey="TerminalId" Type="Terminal" IsForeignKey="true" />
+      <Association Name="Service_ServicePaymentDailySummary" Member="Service" ThisKey="ServiceId" Type="Service" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Services" Member="Services">
+    <Type Name="Service">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="IsRental" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsParkingPerHour" Storage="_IsPakingPerHour" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsParkingWithoutTime" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsOther" Storage="_isOther" Type="System.Boolean" DbType="Bit" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Picture" Type="System.Byte[]" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Service1SCode" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="UsePlaceNumber" Type="System.Boolean" DbType="Bit NOT NULL DEFAULT(0)" CanBeNull="false" />
+      <Association Name="Service_PriceList" Member="PriceLists" OtherKey="ServiceId" Type="PriceList" />
+      <Association Name="Service_Contract" Member="Contracts" OtherKey="RentalServiceId" Type="Contract" />
+      <Association Name="Service_ServicePayment" Member="ServicePayments" OtherKey="ServiceId" Type="ServicePayment" />
+      <Association Name="Service_ServicePaymentDailySummary" Member="ServicePaymentDailySummaries" OtherKey="ServiceId" Type="ServicePaymentDailySummary" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ParkingServicePayments" Member="ParkingServicePayments">
+    <Type Name="ParkingServicePayment">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ParkingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ServicePaymentsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ServicePayment_ParkingServicePayment" Member="ServicePayment" ThisKey="ServicePaymentsId" Type="ServicePayment" IsForeignKey="true" />
+      <Association Name="Parking_ParkingServicePayment" Member="Parking" ThisKey="ParkingId" Type="Parking" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GblSettings" Member="GblSettings">
+    <Type Name="GblSetting">
+      <Column Name="KeyName" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="KeyValue" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Login" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.Data.Linq.Binary" DbType="VarBinary(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AccessCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="User_UserRole" Member="UserRoles" OtherKey="UserId" Type="UserRole" />
+      <Association Name="User_Contract" Member="Contracts" OtherKey="ChUserId" Type="Contract" />
+      <Association Name="User_Contract1" Member="Contracts1" OtherKey="CrUserId" Type="Contract" />
+      <Association Name="User_Parking" Member="Parkings" OtherKey="UserId" Type="Parking" />
+      <Association Name="User_ContractHistory" Member="ContractHistories" OtherKey="UserId" Type="ContractHistory" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Parking" Member="Parkings">
+    <Type Name="Parking">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Number" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateFrom" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DateTo" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CostPerHour" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="CostWithoutTime" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="IsLoss" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="InternalId" Type="System.String" DbType="VarChar(22) NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Parking_ParkingServicePayment" Member="ParkingServicePayments" OtherKey="ParkingId" Type="ParkingServicePayment" />
+      <Association Name="User_Parking" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RentalCashlessPayments" Member="RentalCashlessPayments">
+    <Type Name="RentalCashlessPayment">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContractId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaidDateFrom" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PaidDateTo" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Contract_RentalCashlessPayment" Member="Contract" ThisKey="ContractId" Type="Contract" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContractHistory" Member="ContractHistories">
+    <Type Name="ContractHistory">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContractId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ChangeLog" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="Contract_ContractHistory" Member="Contract" ThisKey="ContractId" Type="Contract" IsForeignKey="true" />
+      <Association Name="User_ContractHistory" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
