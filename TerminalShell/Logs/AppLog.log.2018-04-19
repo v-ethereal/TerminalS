@@ -1,0 +1,10 @@
+[2018-04-19 13:03:01] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-04-19 13:03:12] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-04-19 13:03:12] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-04-19 13:03:15] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-04-19 13:04:39] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2018-04-19 13:04:39] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2018-04-19 13:04:40] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2018-04-19 13:04:41] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logoff()>.
+[2018-04-19 13:04:56] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2018-04-19 13:09:03] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.

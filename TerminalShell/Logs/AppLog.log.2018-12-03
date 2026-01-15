@@ -1,0 +1,9 @@
+[2018-12-03 10:05:23] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2018-12-03 10:07:49] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-03 10:07:50] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-03 10:07:50] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-03 10:07:53] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-03 11:56:11] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-03 11:56:11] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-03 11:56:11] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-03 11:56:14] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.

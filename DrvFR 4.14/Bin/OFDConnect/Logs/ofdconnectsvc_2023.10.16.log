@@ -1,0 +1,5 @@
+[16.10.2023 13:22:32.312] [00000568] [DEBUG] Tofdconnect Svc.OnShutdown
+[16.10.2023 13:22:37.390] [00000116] [ERROR] TProxyServer ServerListenExeption: Socket Error # 10093
+
+[16.10.2023 13:22:37.390] [00000116] [ERROR] TProxyServer ServerListenExeption: Socket Error # 10093
+

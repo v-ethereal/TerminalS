@@ -1,0 +1,11 @@
+[18.08.2023 12:56:28.023] [00000204] [DEBUG] Tofdconnect Svc.OnShutdown
+[18.08.2023 12:56:28.976] [00000464] [ERROR] TProxyServer ServerListenExeption: Socket Error # 10093
+
+[18.08.2023 12:56:28.992] [00000464] [ERROR] TProxyServer ServerListenExeption: Socket Error # 10093
+
+[18.08.2023 12:58:03.937] [00000592] [DEBUG] Tofdconnect =============================================================
+[18.08.2023 12:58:03.953] [00000592] [DEBUG] Tofdconnect   Запуск службы
+[18.08.2023 12:58:03.953] [00000592] [DEBUG] Tofdconnect =============================================================
+[18.08.2023 12:58:04.968] [00000592] [DEBUG] TProxyServer Start
+[18.08.2023 12:58:04.968] [00000592] [DEBUG] TProxyServer ver.1.0.0.2
+[18.08.2023 12:58:04.968] [00000592] [DEBUG] TProxyServer Start server at port 7878

@@ -1,0 +1,14 @@
+[2008-12-31 23:01:32] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2008-12-31 23:01:33] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2008-12-31 23:01:33] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2008-12-31 23:01:35] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2008-12-31 23:01:45] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2008-12-31 23:01:45] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2008-12-31 23:01:45] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2008-12-31 23:01:46] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintUnpaidRentalPlacesReport(DateTime)>.
+[2008-12-31 23:01:46] [DEBUG] [GeneralAppender] - Executing method: <UserService::IsInRole(String)>.
+[2008-12-31 23:01:46] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetNotPaidRentalFees(DateTime)>.
+[2008-12-31 23:01:48] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logoff()>.
+[2008-12-31 23:02:09] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2008-12-31 23:03:06] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2008-12-31 23:03:11] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.

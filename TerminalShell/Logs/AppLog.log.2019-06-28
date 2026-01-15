@@ -1,0 +1,689 @@
+[2019-06-28 10:22:40] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformation(Int32)>.
+[2019-06-28 10:22:47] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2019-06-28 10:22:47] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformation(Int32)>.
+[2019-06-28 10:22:47] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginServiceTransaction(String)>.
+[2019-06-28 10:22:47] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2019-06-28 10:22:47] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2019-06-28 10:23:00] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2019-06-28 10:23:00] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2019-06-28 10:23:00] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedServicePayment(Int32, String, Decimal, Decimal)>.
+[2019-06-28 10:23:08] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2019-06-28 10:23:08] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2019-06-28 10:23:08] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedServicePayment(Int32, String, Decimal, Decimal)>.
+[2019-06-28 10:23:16] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2019-06-28 10:23:16] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2019-06-28 10:23:16] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedServicePayment(Int32, String, Decimal, Decimal)>.
+[2019-06-28 10:23:20] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2019-06-28 10:23:20] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2019-06-28 10:23:20] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedServicePayment(Int32, String, Decimal, Decimal)>.
+[2019-06-28 10:23:25] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2019-06-28 10:23:25] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2019-06-28 10:23:25] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedServicePayment(Int32, String, Decimal, Decimal)>.
+[2019-06-28 10:23:25] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2019-06-28 10:23:25] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2019-06-28 10:23:27] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2019-06-28 10:23:27] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndServiceTransaction()>.
+[2019-06-28 10:23:27] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertServiceFeeRecord(Int32, Decimal, Decimal, String)>.
+[2019-06-28 10:23:27] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+[2019-06-28 10:23:27] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_33b22d52e1ae4df4820baccaeff999e9.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 10:23:28] [ERROR] [GeneralAppender] - Error executing method: <TransactionService::EndServiceTransaction()>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_33b22d52e1ae4df4820baccaeff999e9.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_1515abb12c544bc4bbe2b7245fd43842.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.EndServiceTransaction()
+   в Spring.DynamicReflection.Method_EndServiceTransaction_3b5288c16867435a934077cfd7aafda1.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 10:23:28] [ERROR] [GeneralAppender] - Аварийное завершение печати чека об оплате дополнительной услуги
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_33b22d52e1ae4df4820baccaeff999e9.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_1515abb12c544bc4bbe2b7245fd43842.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.EndServiceTransaction()
+   в Spring.DynamicReflection.Method_EndServiceTransaction_3b5288c16867435a934077cfd7aafda1.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_237b1d85721d4f47ad2c7d8f507f4dee.EndServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.MVP.Presenter.OtherServicePayPresenter.BanknoteAcceptorReceiveMoneyEvent(Object sender, BanknoteAcceptorEventArgs e)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.WaitMoneyMethod()
+[2019-06-28 10:41:52] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-06-28 10:41:56] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-06-28 10:41:57] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-06-28 10:42:00] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-06-28 10:42:07] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformationAboutParkingPerHour()>.
+[2019-06-28 10:42:09] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+[2019-06-28 10:42:09] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_9b156eeeb1004cb0a1b1843594d17288.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 10:42:10] [ERROR] [GeneralAppender] - Error executing method: <TransactionService::Initialize()>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_9b156eeeb1004cb0a1b1843594d17288.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_d976b5e121814773bdf92c51eb2fe400.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_c2a60aa49f1f47e08d0a4703d4f9c6c3.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 10:42:10] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 10:42:10] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2019-06-28 10:42:10] [ERROR] [App] - System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_9b156eeeb1004cb0a1b1843594d17288.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_d976b5e121814773bdf92c51eb2fe400.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_c2a60aa49f1f47e08d0a4703d4f9c6c3.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_d529ee5c8a6b4f3c8126ef9804c5b5b7.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2019-06-28 12:33:14] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2019-06-28 12:33:14] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2019-06-28 12:33:14] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2019-06-28 12:33:19] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceipt(String, Decimal, Decimal)>.
+[2019-06-28 12:33:20] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintAdditionalServiceReceipt(String, Decimal, Decimal)>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 609
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 636
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal price, Decimal depositAmmount)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceipt_6fa82dac3e734f62926bba028b6de910.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:33:20] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 12:33:20] [ERROR] [AppDomain] - System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 609
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 636
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal price, Decimal depositAmmount)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceipt_6fa82dac3e734f62926bba028b6de910.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_d976b5e121814773bdf92c51eb2fe400.PrintAdditionalServiceReceipt(String serviceName, Decimal price, Decimal depositAmmount)
+   в Arsis.RentalSystem.TerminalShell.InitializePage.btnZeroReceipt_Click(Object sender, RoutedEventArgs e)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   в System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   в System.Windows.Controls.Button.OnClick()
+   в System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+[2019-06-28 12:33:20] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2019-06-28 12:34:31] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 12:36:07] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-06-28 12:36:08] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-06-28 12:36:08] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-06-28 12:36:11] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-06-28 12:36:12] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformationAboutParkingPerHour()>.
+[2019-06-28 12:36:12] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+[2019-06-28 12:36:13] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_7440db17700a49c283737efccc7c5166.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:36:13] [ERROR] [GeneralAppender] - Error executing method: <TransactionService::Initialize()>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_7440db17700a49c283737efccc7c5166.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_0845c3cc657f446481d2e8e6c034e1ed.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_305ed78d84734ab7a695539a4279791a.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:36:13] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 12:36:13] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2019-06-28 12:36:13] [ERROR] [App] - System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_7440db17700a49c283737efccc7c5166.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_0845c3cc657f446481d2e8e6c034e1ed.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_305ed78d84734ab7a695539a4279791a.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_fe6aa553544a4ee58a8018c71360b8ff.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2019-06-28 12:36:52] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2019-06-28 12:36:52] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2019-06-28 12:36:52] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2019-06-28 12:36:52] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2019-06-28 12:37:13] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2019-06-28 12:37:13] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2019-06-28 12:37:13] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2019-06-28 12:37:24] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-06-28 12:37:25] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-06-28 12:37:27] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-06-28 12:37:27] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformationAboutParkingPerHour()>.
+[2019-06-28 12:37:27] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+[2019-06-28 12:37:27] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_7440db17700a49c283737efccc7c5166.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:37:27] [ERROR] [GeneralAppender] - Error executing method: <TransactionService::Initialize()>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_7440db17700a49c283737efccc7c5166.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_0845c3cc657f446481d2e8e6c034e1ed.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_305ed78d84734ab7a695539a4279791a.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:37:32] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintZReport()>.
+[2019-06-28 12:37:32] [DEBUG] [GeneralAppender] - Executing method: <UserService::IsInRole(String)>.
+[2019-06-28 12:37:33] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintZReport()>.
+System.ApplicationException: Аварийное завершение печати суточного Z-отчета ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода PrintReportWithCleaning
+   в TermClasses.ShtrihMiniFiscalRegister.PrintZReport() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 818
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintZReport() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 823
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintZReport()
+   в Spring.DynamicReflection.Method_PrintZReport_95de0fe16222423fa0cdd132946c339b.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:37:53] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceipt(String, Decimal, Decimal)>.
+[2019-06-28 12:37:53] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintAdditionalServiceReceipt(String, Decimal, Decimal)>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 609
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 636
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal price, Decimal depositAmmount)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceipt_de4e065130984c62aeab905e8cc993ec.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:37:53] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 12:37:53] [ERROR] [AppDomain] - System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Исчерпан ресурс ФН' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 609
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 636
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal price, Decimal depositAmmount)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceipt_de4e065130984c62aeab905e8cc993ec.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_0845c3cc657f446481d2e8e6c034e1ed.PrintAdditionalServiceReceipt(String serviceName, Decimal price, Decimal depositAmmount)
+   в Arsis.RentalSystem.TerminalShell.InitializePage.btnZeroReceipt_Click(Object sender, RoutedEventArgs e)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   в System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   в System.Windows.Controls.Button.OnClick()
+   в System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+[2019-06-28 12:37:53] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2019-06-28 12:38:55] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 12:45:55] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-06-28 12:45:55] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-06-28 12:45:55] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-06-28 12:45:58] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-06-28 12:45:59] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformationAboutParkingPerHour()>.
+[2019-06-28 12:46:00] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+[2019-06-28 12:46:00] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_eb40de1d4a4a406db89caf81c09d55a7.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:46:00] [ERROR] [GeneralAppender] - Error executing method: <TransactionService::Initialize()>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_eb40de1d4a4a406db89caf81c09d55a7.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_01ab14cbb8b04b83998ad28d0dbac39b.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_ae1eef2b736849f98933986b2f83a407.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:46:00] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 12:46:00] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2019-06-28 12:46:00] [ERROR] [App] - System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_eb40de1d4a4a406db89caf81c09d55a7.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_01ab14cbb8b04b83998ad28d0dbac39b.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_ae1eef2b736849f98933986b2f83a407.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_0eb27c616bc94e66bf9bc4382f0b8acc.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2019-06-28 12:46:36] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2019-06-28 12:46:36] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2019-06-28 12:46:36] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2019-06-28 12:46:40] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintZReport()>.
+[2019-06-28 12:46:40] [DEBUG] [GeneralAppender] - Executing method: <UserService::IsInRole(String)>.
+[2019-06-28 12:46:40] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintZReport()>.
+System.ApplicationException: Аварийное завершение печати суточного Z-отчета ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода PrintReportWithCleaning
+   в TermClasses.ShtrihMiniFiscalRegister.PrintZReport() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 818
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintZReport() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 823
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintZReport()
+   в Spring.DynamicReflection.Method_PrintZReport_7e594ecb8a4f42f38cdb4cdd7eef55b8.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:46:47] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceipt(String, Decimal, Decimal)>.
+[2019-06-28 12:46:48] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintAdditionalServiceReceipt(String, Decimal, Decimal)>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 609
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 636
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal price, Decimal depositAmmount)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceipt_28eab5de65cb488db3f5396179670dff.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:46:48] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 12:46:48] [ERROR] [AppDomain] - System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 609
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal servicePrice, Decimal paidSum) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 636
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceipt(String serviceName, Decimal price, Decimal depositAmmount)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceipt_28eab5de65cb488db3f5396179670dff.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_01ab14cbb8b04b83998ad28d0dbac39b.PrintAdditionalServiceReceipt(String serviceName, Decimal price, Decimal depositAmmount)
+   в Arsis.RentalSystem.TerminalShell.InitializePage.btnZeroReceipt_Click(Object sender, RoutedEventArgs e)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   в System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   в System.Windows.Controls.Button.OnClick()
+   в System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+[2019-06-28 12:46:48] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2019-06-28 12:50:13] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-06-28 12:50:16] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-06-28 12:50:16] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-06-28 12:50:18] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-06-28 12:50:25] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformationAboutParkingPerHour()>.
+[2019-06-28 12:50:25] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+[2019-06-28 12:50:26] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_1fec31fa54c84ac28f8d50c20d15750a.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:50:27] [ERROR] [GeneralAppender] - Error executing method: <TransactionService::Initialize()>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_1fec31fa54c84ac28f8d50c20d15750a.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_73672dde9341415ea238cc3e9d9b19bd.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_a77ecd017c8c4e02916f307c78bb3810.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:50:27] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 12:50:27] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2019-06-28 12:50:27] [ERROR] [App] - System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_1fec31fa54c84ac28f8d50c20d15750a.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_73672dde9341415ea238cc3e9d9b19bd.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_a77ecd017c8c4e02916f307c78bb3810.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_14c2e774158d4bd6a8d9ef55aaa8f0b8.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2019-06-28 12:51:41] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 12:54:41] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-06-28 12:54:42] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-06-28 12:54:42] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-06-28 12:54:44] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-06-28 12:54:46] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformationAboutParkingPerHour()>.
+[2019-06-28 12:54:46] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+[2019-06-28 12:54:47] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_b63a2ef3fd66410ca2be5865db5d2f0d.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:54:47] [ERROR] [GeneralAppender] - Error executing method: <TransactionService::Initialize()>.
+System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_b63a2ef3fd66410ca2be5865db5d2f0d.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_66f4b8d1aa0542618a72328011ac94e1.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_f4c6ac9164004ed5b1fd2ff735d86ced.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 12:54:47] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 12:54:47] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2019-06-28 12:54:47] [ERROR] [App] - System.ApplicationException: Аварийное завершение печати чека об оплате дополнительной услуги ---> System.ApplicationException: Ошибка 'Заводской номер уже введен' при выполнении метода Sale
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1064
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal servicePrice, Decimal paidSum, IList`1 InfoItems) в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 1111
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Spring.DynamicReflection.Method_PrintAdditionalServiceReceiptEx_b63a2ef3fd66410ca2be5865db5d2f0d.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_66f4b8d1aa0542618a72328011ac94e1.PrintAdditionalServiceReceiptEx(String serviceName, Decimal price, Decimal depositAmmount, IList`1 infoItems)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.CloseServiceTransaction()
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TransactionService.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_f4c6ac9164004ed5b1fd2ff735d86ced.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_ffcceb33685a4c3db72b6627e9eb7e82.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2019-06-28 18:04:24] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 18:10:26] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-06-28 18:10:26] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-06-28 18:10:27] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::Initialize()>.
+System.ApplicationException: Аварийное завершение инициализации фискального регистратора ---> System.ApplicationException: 24 часа кончились, для продолжения работы необходимо запустить печать Z-отчета
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 352
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 357
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_9f2683f849bf45df8fb5be5becde42a2.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-06-28 18:10:27] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-06-28 18:10:27] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2019-06-28 18:10:27] [ERROR] [App] - System.ApplicationException: Аварийное завершение инициализации фискального регистратора ---> System.ApplicationException: 24 часа кончились, для продолжения работы необходимо запустить печать Z-отчета
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 352
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 357
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_9f2683f849bf45df8fb5be5becde42a2.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_d1bf351a42e6462ea211bf1a665636c0.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()

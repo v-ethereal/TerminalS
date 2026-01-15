@@ -1,0 +1,1578 @@
+[2023-02-10 13:12:12] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:12:12] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:12:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:12:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:12:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:12:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:12:13] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:12:13] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:12:13] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:12:13] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:12:19] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:12:19] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:12:19] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:12:22] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:12:22] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:12:22] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:12:25] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:12:25] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:12:25] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:12:28] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:12:28] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:12:28] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:12:28] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:12:28] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:12:30] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:12:30] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:12:30] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:12:30] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:12:31] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:12:40] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:12:40] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:12:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:12:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:12:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:12:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:12:41] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:12:41] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:12:41] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:12:41] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:12:46] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:12:46] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:12:46] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:12:50] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:12:50] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:12:50] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:12:53] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:12:53] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:12:53] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:12:56] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:12:56] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:12:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:12:56] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:12:56] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:12:58] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:12:58] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:12:58] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:12:58] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:12:59] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:13:08] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:13:08] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:13:08] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:13:08] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:13:08] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:13:08] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:13:08] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:13:08] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:13:08] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:13:08] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:13:15] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:13:15] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:13:15] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:13:20] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:13:20] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:13:20] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:13:23] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:13:23] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:13:23] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:13:23] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:13:23] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:13:25] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:13:25] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:13:25] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:13:25] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:13:26] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:13:33] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:13:34] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:13:34] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:13:34] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:13:34] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:13:34] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:13:35] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:13:35] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:13:35] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:13:35] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:13:39] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:13:39] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:13:39] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:13:42] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:13:42] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:13:42] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:13:45] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:13:45] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:13:45] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:13:49] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:13:49] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:13:49] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:13:52] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:13:52] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:13:52] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:13:52] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:13:52] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:13:54] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:13:54] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:13:54] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:13:54] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:13:55] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:14:02] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:14:02] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:14:03] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:14:03] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:14:03] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:14:03] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:14:03] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:14:03] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:14:03] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:14:03] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:14:42] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:14:42] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:14:42] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:14:46] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:14:46] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:14:46] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:14:49] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:14:49] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:14:49] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:14:53] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:14:53] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:14:53] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:14:53] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:14:53] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:14:55] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:14:55] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:14:55] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:14:55] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:14:55] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:15:49] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:15:49] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:15:49] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:15:49] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:15:49] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:15:49] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:15:49] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:15:49] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:15:49] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:15:49] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:16:00] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:16:00] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:16:00] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:16:04] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:16:04] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:16:04] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:16:07] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:16:07] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:16:07] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:16:10] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:16:10] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:16:10] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:16:10] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:16:10] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:16:12] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:16:12] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:16:12] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:16:12] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:16:13] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:16:21] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:16:21] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:16:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:16:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:16:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:16:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:16:21] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:16:21] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:16:21] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:16:21] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:16:27] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:16:27] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:16:27] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:16:27] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:16:27] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:16:29] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:16:29] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:16:29] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:16:29] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:16:30] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:16:37] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:16:37] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:16:37] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:16:37] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:16:37] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:16:38] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:16:38] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:16:38] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:16:38] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:16:38] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:16:43] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:16:43] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:16:43] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:16:47] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:16:47] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:16:47] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:16:50] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:16:50] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:16:50] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:16:50] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:16:50] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:16:52] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:16:52] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:16:52] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:16:52] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:16:52] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:17:01] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:17:01] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:17:01] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:17:01] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:17:01] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:17:01] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:17:02] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:17:02] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:17:02] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:17:02] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:17:08] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:17:08] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:17:08] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:17:12] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:17:12] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:17:12] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:17:12] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:17:12] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:17:14] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:17:14] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:17:14] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:17:14] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:17:15] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:17:21] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:17:21] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:17:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:17:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:17:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:17:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:17:21] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:17:21] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:17:21] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:17:21] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:17:26] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:17:26] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:17:26] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:17:30] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:17:30] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:17:30] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:17:33] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:17:33] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:17:33] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:17:47] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:17:47] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:17:47] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:17:47] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:17:47] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:17:49] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:17:49] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:17:49] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:17:49] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:17:50] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:18:02] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:18:02] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:18:02] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:18:03] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:18:03] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:18:03] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:18:03] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:18:03] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:18:03] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:18:03] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:18:09] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:18:09] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:18:09] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:18:12] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:18:12] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:18:12] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:18:16] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:18:16] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:18:16] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:18:19] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:18:19] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:18:19] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:18:19] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:18:19] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:18:21] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:18:21] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:18:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:18:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:18:22] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:18:28] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:18:28] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:18:28] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:18:28] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:18:28] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:18:28] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:18:28] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:18:28] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:18:28] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:18:28] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:18:33] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:18:33] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:18:33] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:18:36] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:18:36] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:18:36] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:18:39] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:18:39] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:18:39] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:18:50] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:18:50] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:18:50] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:18:50] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:18:50] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:18:52] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:18:52] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:18:52] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:18:52] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:18:53] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:18:59] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:18:59] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:18:59] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:19:00] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:19:00] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:19:00] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:19:00] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:19:00] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:19:00] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:19:00] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:19:04] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:19:04] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:19:04] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:19:08] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:19:08] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:19:08] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:19:11] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:19:11] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:19:11] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:19:11] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:19:11] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:19:13] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:19:13] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:19:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:19:14] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:19:14] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:19:23] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:19:23] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:19:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:19:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:19:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:19:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:19:23] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:19:23] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:19:23] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:19:23] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:19:28] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:19:28] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:19:28] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:19:31] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:19:31] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:19:31] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:19:35] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:19:35] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:19:35] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:19:35] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:19:35] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:19:37] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:19:37] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:19:37] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:19:37] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:19:38] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:19:44] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:19:45] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:19:45] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:19:45] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:19:45] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:19:45] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:19:45] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:19:45] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:19:45] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:19:45] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:19:49] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:19:49] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:19:49] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:19:53] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:19:53] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:19:53] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:19:56] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:19:56] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:19:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:19:59] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:19:59] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:19:59] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:20:02] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:20:02] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:20:02] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:20:07] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:20:07] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:20:07] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:20:07] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:20:07] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:20:09] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:20:09] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:20:09] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:20:09] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:20:10] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:20:16] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:20:17] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:20:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:20:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:20:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:20:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:20:17] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:20:17] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:20:17] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:20:17] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:20:22] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:20:22] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:20:22] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:20:24] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:20:24] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:20:24] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:20:28] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:20:28] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:20:28] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:20:28] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:20:28] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:20:30] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:20:30] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:20:30] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:20:30] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:20:31] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:20:37] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:20:37] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:20:37] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:20:37] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:20:37] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:20:37] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:20:37] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:20:37] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:20:37] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:20:37] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:20:42] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:20:42] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:20:42] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:20:49] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:20:49] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:20:49] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:20:56] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:20:56] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:20:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:21:03] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:21:03] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:21:03] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:21:03] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:21:03] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:21:05] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:21:05] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:21:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:21:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:21:06] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:21:12] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:21:12] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:21:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:21:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:21:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:21:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:21:13] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:21:13] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:21:13] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:21:13] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:21:18] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:21:18] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:21:18] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:21:21] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:21:21] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:21:21] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:21:21] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:21:21] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:21:23] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:21:23] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:21:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:21:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:21:24] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:21:31] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:21:31] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:21:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:21:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:21:32] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:21:32] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:21:32] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:21:32] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:21:32] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:21:32] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:21:36] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:21:36] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:21:36] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:21:40] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:21:40] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:21:40] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:21:43] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:21:43] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:21:43] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:21:46] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:21:46] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:21:46] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:21:46] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:21:46] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:21:48] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:21:48] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:21:48] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:21:48] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:21:49] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:21:55] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:21:56] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:21:56] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:21:56] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:21:56] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:21:56] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:21:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:21:56] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:21:56] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:21:56] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:22:01] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:01] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:01] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:22:04] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:04] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:04] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:22:07] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:07] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:07] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:22:11] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:11] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:11] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:22:11] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:22:11] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:22:13] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:22:13] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:22:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:22:13] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:22:13] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:22:21] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:22:21] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:22:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:22:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:22:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:22:21] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:22:21] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:22:21] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:22:21] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:22:21] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:22:26] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:26] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:26] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:22:29] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:29] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:29] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:22:33] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:33] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:33] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:22:33] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:22:33] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:22:35] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:22:35] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:22:35] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:22:35] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:22:36] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:22:42] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:22:42] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:22:42] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:22:42] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:22:42] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:22:42] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:22:42] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:22:42] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:22:42] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:22:42] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:22:48] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:48] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:48] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:22:51] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:51] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:51] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:22:54] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:54] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:54] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:22:57] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:22:57] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:22:57] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:23:00] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:23:00] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:23:00] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:23:00] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:23:00] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:23:02] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:23:02] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:23:02] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:23:02] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:23:03] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:23:17] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:23:17] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:23:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:23:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:23:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:23:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:23:17] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:23:17] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:23:17] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:23:17] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:23:29] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:23:29] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:23:29] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:23:32] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:23:32] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:23:32] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:23:35] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:23:35] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:23:35] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:23:35] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:23:36] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:23:38] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:23:38] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:23:38] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:23:38] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:23:38] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:23:45] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:23:45] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:23:45] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:23:46] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:23:46] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:23:46] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:23:46] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:23:46] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:23:46] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:23:46] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:23:51] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:23:51] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:23:51] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:23:53] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:23:53] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:23:53] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:23:57] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:23:57] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:23:57] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:24:00] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:24:00] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:24:00] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:24:00] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:24:00] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:24:02] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:24:02] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:24:02] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:24:02] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:24:03] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:24:16] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:24:17] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:24:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:24:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:24:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:24:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:24:18] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:24:18] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:24:18] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:24:18] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:24:23] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:24:23] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:24:23] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:24:26] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:24:26] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:24:26] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:24:29] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:24:29] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:24:29] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:24:32] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:24:32] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:24:32] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:24:32] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:24:32] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:24:34] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:24:34] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:24:34] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:24:34] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:24:35] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:24:53] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:24:54] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:24:54] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:24:54] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:24:54] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:24:54] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:24:54] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:24:54] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:24:54] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:24:54] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:24:59] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:24:59] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:24:59] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:02] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:25:02] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:25:02] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:06] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:25:06] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:25:06] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:09] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:25:09] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:25:09] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:09] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:25:09] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:25:11] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:25:11] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:25:11] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:25:11] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:25:12] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:25:18] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:25:18] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:25:18] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:25:18] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:25:18] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:25:18] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:25:18] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:25:18] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:25:18] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:25:18] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:25:24] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:25:24] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:25:24] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:27] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:25:27] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:25:27] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:30] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:25:30] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:25:30] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:30] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:25:30] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:25:32] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:25:32] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:25:32] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:25:32] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:25:34] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:25:41] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:25:41] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:25:41] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:25:41] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:25:41] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:25:42] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:25:42] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:25:42] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:25:42] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:25:42] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:25:48] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:25:48] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:25:48] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:51] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:25:51] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:25:51] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:54] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:25:54] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:25:54] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:57] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:25:57] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:25:57] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:25:57] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:25:57] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:25:59] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:25:59] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:25:59] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:25:59] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:26:00] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:26:07] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:26:07] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:26:08] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:26:08] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:26:08] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:26:08] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:26:08] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:26:08] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:26:08] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:26:08] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:26:17] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:26:17] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:26:17] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:26:20] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:26:20] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:26:20] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:26:23] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:26:23] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:26:23] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:26:23] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:26:23] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:26:25] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:26:25] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:26:25] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:26:25] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:26:26] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:26:33] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:26:33] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:26:33] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:26:33] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:26:33] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:26:33] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:26:33] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:26:33] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:26:33] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:26:33] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:26:38] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:26:38] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:26:38] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:26:41] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:26:41] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:26:41] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:26:44] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:26:44] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:26:44] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:26:48] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:26:48] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:26:48] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:26:48] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:26:48] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:26:50] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:26:50] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:26:50] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:26:50] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:26:51] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:26:59] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:26:59] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:26:59] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:26:59] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:26:59] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:26:59] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:26:59] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:26:59] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:26:59] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:26:59] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:27:04] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:27:04] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:27:04] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:27:07] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:27:07] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:27:07] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:27:14] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:27:14] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:27:14] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:27:17] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:27:17] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:27:17] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:27:17] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:27:17] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:27:19] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:27:19] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:27:19] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:27:19] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:27:20] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:27:42] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:27:42] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:27:42] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:27:44] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:27:44] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:27:44] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:27:44] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:27:44] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:27:44] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:27:44] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:27:44] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:27:44] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:27:44] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:27:50] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:27:50] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:27:50] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:27:53] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:27:53] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:27:53] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:27:56] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:27:56] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:27:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:27:59] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:27:59] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:27:59] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:27:59] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:27:59] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:28:01] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:28:01] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:28:01] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:28:01] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:28:02] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:28:09] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:28:09] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:28:09] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:28:09] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:28:09] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:28:09] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:28:09] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:28:09] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:28:09] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:28:09] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:28:14] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:28:14] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:28:14] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:28:17] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:28:17] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:28:17] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:28:20] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:28:20] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:28:20] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:28:20] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:28:20] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:28:23] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:28:23] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:28:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:28:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:28:24] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:28:31] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:28:31] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:28:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:28:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:28:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:28:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:28:31] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:28:31] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:28:31] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:28:31] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:28:36] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:28:36] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:28:36] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:28:39] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:28:39] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:28:39] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:28:42] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:28:42] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:28:42] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:28:45] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:28:45] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:28:45] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:28:45] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:28:45] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:28:47] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:28:47] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:28:47] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:28:47] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:28:48] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:28:55] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:28:55] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:28:55] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:28:56] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:28:56] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:28:56] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:28:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:28:56] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:28:56] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:28:56] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:29:01] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:29:01] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:29:01] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:29:05] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:29:05] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:29:05] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:29:08] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:29:08] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:29:08] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:29:08] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:29:08] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:29:10] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:29:10] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:29:10] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:29:10] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:29:10] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:29:16] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:29:17] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:29:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:29:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:29:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:29:17] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:29:17] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:29:17] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:29:17] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:29:17] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:29:23] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:29:23] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:29:23] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:29:27] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:29:27] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:29:27] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:29:27] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:29:27] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:29:29] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:29:29] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:29:29] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:29:29] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:29:30] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:29:38] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:29:38] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:29:39] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:29:39] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:29:39] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:29:39] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:29:39] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:29:39] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:29:39] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:29:39] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:29:44] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:29:44] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:29:44] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:29:46] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:29:46] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:29:46] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:29:50] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:29:50] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:29:50] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:29:53] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:29:53] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:29:53] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:29:53] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:29:53] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:29:55] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:29:55] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:29:55] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:29:55] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:29:56] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:30:03] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:30:03] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:30:03] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:30:03] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:30:04] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:30:04] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:30:04] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:30:04] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:30:04] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:30:04] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:30:08] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:30:08] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:30:08] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:30:11] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:30:11] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:30:11] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:30:15] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:30:15] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:30:15] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:30:18] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:30:18] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:30:18] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:30:18] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:30:18] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:30:20] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:30:20] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:30:20] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:30:20] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:30:21] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:30:30] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:30:30] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:30:30] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:30:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:30:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:30:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:30:31] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:30:31] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:30:31] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:30:31] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:30:39] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:30:39] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:30:39] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:30:42] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:30:42] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:30:42] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:30:46] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:30:46] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:30:46] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:30:53] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:30:53] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:30:53] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:30:53] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:30:53] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:30:55] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:30:55] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:30:55] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:30:55] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:30:56] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:31:04] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:31:04] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:31:04] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:31:04] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:31:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:31:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:31:05] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:31:05] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:31:05] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:31:05] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:31:10] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:31:10] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:31:10] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:31:13] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:31:13] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:31:13] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:31:17] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:31:17] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:31:17] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:31:20] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:31:20] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:31:20] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:31:20] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:31:20] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:31:22] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:31:22] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:31:22] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:31:22] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:31:23] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:31:30] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:31:30] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:31:30] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:31:30] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:31:30] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:31:30] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:31:30] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:31:30] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:31:30] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:31:30] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:31:35] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:31:35] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:31:35] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:31:38] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:31:38] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:31:38] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:31:41] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:31:41] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:31:41] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:31:51] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:31:51] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:31:51] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:31:51] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:31:51] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:31:53] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:31:53] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:31:53] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:31:53] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:31:54] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:32:02] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:32:05] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:32:05] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:32:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:32:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:32:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:32:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:32:05] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:32:05] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:32:05] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:32:05] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:32:11] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:32:11] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:32:11] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:32:14] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:32:14] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:32:14] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:32:18] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:32:18] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:32:18] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:32:18] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:32:18] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:32:20] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:32:20] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:32:20] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:32:20] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:32:20] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:32:26] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:32:26] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:32:27] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:32:27] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:32:27] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:32:27] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:32:27] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:32:27] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:32:27] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:32:27] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:32:32] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:32:32] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:32:32] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:32:35] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:32:35] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:32:35] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:32:38] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:32:38] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:32:38] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:32:41] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:32:41] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:32:41] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:32:41] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:32:41] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:32:43] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:32:43] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:32:43] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:32:43] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:32:44] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:32:50] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:32:50] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:32:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:32:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:32:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:32:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:32:51] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:32:51] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:32:51] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:32:51] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:32:56] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:32:56] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:32:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:32:59] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:32:59] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:32:59] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:33:01] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:33:01] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:33:01] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:33:01] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:33:01] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:33:03] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:33:03] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:33:03] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:33:04] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:33:04] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:33:13] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:33:14] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:33:14] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:33:14] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:33:14] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:33:14] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:33:15] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:33:15] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:33:15] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:33:15] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:33:19] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:33:19] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:33:19] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:33:22] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:33:22] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:33:22] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:33:26] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:33:26] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:33:26] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:33:29] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:33:29] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:33:29] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:33:29] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:33:29] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:33:31] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:33:31] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:33:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:33:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:33:32] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:33:40] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:33:40] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:33:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:33:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:33:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:33:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:33:40] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:33:40] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:33:40] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:33:40] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:33:46] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:33:46] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:33:46] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:33:49] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:33:49] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:33:49] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:33:53] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:33:53] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:33:53] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:33:56] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:33:56] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:33:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:33:56] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:33:56] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:33:58] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:33:58] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:33:58] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:33:58] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:33:59] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:34:05] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:34:05] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:34:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:34:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:34:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:34:05] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:34:05] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:34:05] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:34:05] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:34:05] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:34:15] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:34:15] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:34:15] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:34:19] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:34:19] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:34:19] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:34:22] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:34:22] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:34:22] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:34:22] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:34:22] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:34:24] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:34:24] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:34:24] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:34:24] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:34:25] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:34:33] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:34:33] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:34:33] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:34:33] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:34:33] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:34:33] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:34:33] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:34:33] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:34:33] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:34:33] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:34:39] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:34:39] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:34:39] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:34:42] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:34:42] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:34:42] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:34:48] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:34:48] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:34:48] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:34:49] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:34:49] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:34:51] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:34:51] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:34:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:34:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:34:52] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:34:58] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:34:58] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:34:58] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:34:58] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:34:58] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:34:58] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:34:58] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:34:59] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:34:59] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:34:59] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:35:05] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:35:05] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:35:05] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:35:09] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:35:09] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:35:09] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:35:12] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:35:12] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:35:12] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:35:12] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:35:12] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:35:14] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:35:14] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:35:14] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:35:14] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:35:16] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:35:23] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:35:23] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:35:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:35:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:35:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:35:23] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:35:23] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:35:23] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:35:23] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:35:23] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:35:28] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:35:28] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:35:28] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:35:32] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:35:32] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:35:32] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:35:35] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:35:35] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:35:35] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:35:38] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:35:38] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:35:38] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:35:38] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:35:38] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:35:40] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:35:40] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:35:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:35:41] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:35:41] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:35:50] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:35:50] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:35:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:35:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:35:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:35:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:35:51] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:35:51] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:35:51] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:35:51] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:35:56] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:35:56] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:35:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:35:59] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:35:59] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:35:59] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:36:02] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:36:02] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:36:02] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:36:05] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:36:05] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:36:05] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:36:05] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:36:05] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:36:07] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:36:07] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:36:07] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:36:08] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:36:08] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:36:15] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:36:15] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:36:15] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:36:15] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:36:15] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:36:15] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:36:15] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:36:15] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:36:15] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:36:15] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:36:20] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:36:20] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:36:20] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:36:23] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:36:23] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:36:23] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:36:26] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:36:26] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:36:26] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:36:29] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:36:29] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:36:29] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:36:29] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:36:29] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:36:31] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:36:31] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:36:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:36:31] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:36:32] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:36:38] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:36:38] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:36:38] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:36:38] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:36:38] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:36:38] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:36:39] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:36:39] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:36:39] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:36:39] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:36:43] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:36:43] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:36:43] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:36:46] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:36:46] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:36:46] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:36:49] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:36:49] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:36:49] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:36:49] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:36:49] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:36:51] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:36:51] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:36:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:36:51] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:36:53] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:36:59] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:37:00] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:37:00] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:37:00] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:37:00] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:37:00] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:37:00] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:37:00] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:37:00] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:37:00] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:37:49] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:37:49] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:37:49] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:37:52] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:37:52] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:37:52] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:37:56] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:37:56] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:37:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:37:59] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:37:59] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:37:59] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:37:59] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:37:59] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:38:01] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:38:01] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:38:01] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:38:01] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:38:02] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:38:09] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:38:09] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:38:09] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:38:09] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:38:09] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:38:09] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:38:09] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:38:09] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:38:09] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:38:09] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:38:14] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:38:14] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:38:14] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:38:17] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:38:17] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:38:17] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:38:24] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:38:24] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:38:24] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:38:30] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:38:30] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:38:30] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:38:30] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:38:30] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:38:32] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:38:32] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:38:32] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:38:32] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:38:34] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:38:40] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2023-02-10 13:38:40] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2023-02-10 13:38:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:38:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:38:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2023-02-10 13:38:40] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2023-02-10 13:38:40] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2023-02-10 13:38:40] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2023-02-10 13:38:40] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2023-02-10 13:38:40] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2023-02-10 13:38:45] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:38:45] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:38:45] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:38:48] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:38:48] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:38:48] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:38:51] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:38:51] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:38:51] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:38:54] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2023-02-10 13:38:54] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2023-02-10 13:38:54] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedRentalPayment(Decimal)>.
+[2023-02-10 13:38:54] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2023-02-10 13:38:54] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2023-02-10 13:38:56] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2023-02-10 13:38:56] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2023-02-10 13:38:56] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2023-02-10 13:38:56] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertRentalFeeRecord(String, Decimal)>.
+[2023-02-10 13:38:57] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintRentalReceipt(List`1)>.
+[2023-02-10 13:39:05] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2023-02-10 13:39:05] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2023-02-10 13:39:05] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2023-02-10 13:39:06] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintUnpaidRentalPlacesReport(DateTime)>.
+[2023-02-10 13:39:06] [DEBUG] [GeneralAppender] - Executing method: <UserService::IsInRole(String)>.
+[2023-02-10 13:39:06] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetNotPaidRentalFees(DateTime)>.
+[2023-02-10 13:39:12] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logoff()>.
+[2023-02-10 14:03:41] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2023-02-10 14:03:42] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2023-02-10 14:03:42] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2023-02-10 14:03:43] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintZReport()>.
+[2023-02-10 14:03:43] [DEBUG] [GeneralAppender] - Executing method: <UserService::IsInRole(String)>.
+[2023-02-10 14:03:51] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintShiftSummaryReport()>.
+[2023-02-10 14:03:51] [DEBUG] [GeneralAppender] - Executing method: <UserService::IsInRole(String)>.
+[2023-02-10 14:04:02] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2023-02-10 14:04:02] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logoff()>.

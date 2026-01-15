@@ -1,0 +1,90 @@
+[2019-04-20 12:33:55] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2019-04-20 12:33:55] [ERROR] [AppDomain] - System.Windows.Markup.XamlParseException: Не удается создать экземпляр "OtherServicesPage", определенный в сборке "TerminalShell, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null". Адресат вызова создал исключение.  Ошибка в файле разметки "OtherServicesPage.xaml", строка 1, позиция 7. ---> System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.Data.SqlClient.SqlException: Ошибка при подключении к серверу. При подключении к SQL Server 2005 эта ошибка может быть вызвана тем, что стандартные параметры SQL Server не разрешают удаленные подключения. (provider: Поставщик именованных каналов, error: 40 - Не удалось открыть подключение к SQL Server)
+   в System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   в System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   в System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   в System.Data.SqlClient.SqlConnection.Open()
+   в System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   в System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   в System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   в System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   в System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   в System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   в Arsis.RentalSystem.Core.Dal.RentalSystemDal.CheckTerminalExistance(String machineName)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TerminalService.Stop()
+   в Spring.DynamicReflection.Method_Stop_55e9a7a73eca4b9287174461de47dd1d.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandle& ctor, Boolean& bNeedSecurityCheck)
+   в System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean fillCache)
+   в System.RuntimeType.CreateInstanceImpl(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean fillCache)
+   в System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   в System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Windows.Markup.XamlParseException.ThrowException(String message, Exception innerException, Int32 lineNumber, Int32 linePosition, Uri baseUri, XamlObjectIds currentXamlObjectIds, XamlObjectIds contextXamlObjectIds, Type objectType)
+   в System.Windows.Markup.XamlParseException.ThrowException(ParserContext parserContext, Int32 lineNumber, Int32 linePosition, String message, Exception innerException)
+   в System.Windows.Markup.BamlRecordReader.ThrowExceptionWithLine(String message, Exception innerException)
+   в System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+   в System.Windows.Markup.BamlRecordReader.GetElementAndFlags(BamlElementStartRecord bamlElementStartRecord, Object& element, ReaderFlags& flags, Type& delayCreatedType, Int16& delayCreatedTypeId)
+   в System.Windows.Markup.BamlRecordReader.BaseReadElementStartRecord(BamlElementStartRecord bamlElementRecord)
+   в System.Windows.Markup.BamlRecordReader.ReadElementStartRecord(BamlElementStartRecord bamlElementRecord)
+   в System.Windows.Markup.BamlRecordReader.ReadRecord(BamlRecord bamlRecord)
+   в System.Windows.Markup.BamlRecordReader.Read(Boolean singleRecord)
+   в System.Windows.Markup.TreeBuilderBamlTranslator.ParseFragment()
+   в System.Windows.Markup.TreeBuilder.Parse()
+   в System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   в System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   в MS.Internal.AppModel.AppModelKnownContentFactory.BamlConverter(Stream stream, Uri baseUri, Boolean canUseTopLevelBrowser, Boolean sandboxExternalContent, Boolean allowAsync, Boolean isJournalNavigation, XamlReader& asyncObjectConverter)
+   в MS.Internal.AppModel.MimeObjectFactory.GetObjectAndCloseStream(Stream s, ContentType contentType, Uri baseUri, Boolean canUseTopLevelBrowser, Boolean sandboxExternalContent, Boolean allowAsync, Boolean isJournalNavigation, XamlReader& asyncObjectConverter)
+   в System.Windows.Navigation.NavigationService.GetObjectFromResponse(WebRequest request, WebResponse response, Uri destinationUri, Object navState)
+   в System.Windows.Navigation.NavigationService.DoNavigate(Uri source, NavigationMode f, Object navState)
+   в System.Windows.Navigation.NavigateQueueItem.Dispatch(Object obj)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+[2019-04-20 12:33:55] [ERROR] [GeneralAppender] - Error executing method: <TerminalService::Stop()>.
+System.Data.SqlClient.SqlException: Ошибка при подключении к серверу. При подключении к SQL Server 2005 эта ошибка может быть вызвана тем, что стандартные параметры SQL Server не разрешают удаленные подключения. (provider: Поставщик именованных каналов, error: 40 - Не удалось открыть подключение к SQL Server)
+   в System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   в System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   в System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   в System.Data.SqlClient.SqlConnection.Open()
+   в System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   в System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   в System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   в System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   в System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   в System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   в Arsis.RentalSystem.Core.Dal.RentalSystemDal.CheckTerminalExistance(String machineName)
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.TerminalService.Stop()
+   в Spring.DynamicReflection.Method_Stop_55e9a7a73eca4b9287174461de47dd1d.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2019-04-20 14:18:19] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-04-20 14:18:21] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-04-20 14:18:21] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-04-20 14:18:23] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-04-20 14:25:33] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-04-20 14:25:35] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-04-20 14:25:36] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-04-20 14:25:38] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-04-20 14:32:07] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-04-20 14:32:14] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-04-20 14:32:14] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-04-20 14:32:16] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-04-20 14:39:23] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-04-20 14:39:26] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-04-20 14:39:26] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-04-20 14:39:28] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-04-20 14:48:15] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-04-20 14:48:17] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-04-20 14:48:17] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-04-20 14:48:20] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2019-04-20 14:55:59] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2019-04-20 15:05:09] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-04-20 15:05:11] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-04-20 15:05:11] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-04-20 15:05:13] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.

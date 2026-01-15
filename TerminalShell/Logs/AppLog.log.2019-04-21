@@ -1,0 +1,4 @@
+[2019-04-21 11:07:21] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2019-04-21 11:07:23] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2019-04-21 11:07:23] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2019-04-21 11:07:25] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.

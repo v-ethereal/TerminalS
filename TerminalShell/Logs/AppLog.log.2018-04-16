@@ -1,0 +1,30 @@
+[2018-04-16 11:01:54] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformation(Int32)>.
+[2018-04-16 12:05:12] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformation(Int32)>.
+[2018-04-16 12:05:15] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2018-04-16 12:05:15] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformation(Int32)>.
+[2018-04-16 12:05:15] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginServiceTransaction(String)>.
+[2018-04-16 12:05:15] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2018-04-16 12:05:15] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2018-04-16 12:05:25] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2018-04-16 12:05:25] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2018-04-16 12:05:25] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedServicePayment(Int32, String, Decimal, Decimal)>.
+[2018-04-16 12:05:30] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2018-04-16 12:05:30] [DEBUG] [GeneralAppender] - Поступившие деньги опознаны
+[2018-04-16 12:05:30] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::ProceedServicePayment(Int32, String, Decimal, Decimal)>.
+[2018-04-16 12:05:30] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2018-04-16 12:05:30] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2018-04-16 12:05:32] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2018-04-16 12:05:32] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndServiceTransaction()>.
+[2018-04-16 12:05:32] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::InsertServiceFeeRecord(Int32, Decimal, Decimal, String)>.
+[2018-04-16 12:05:32] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceiptEx(String, Decimal, Decimal, IList`1)>.
+[2018-04-16 12:05:34] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2018-04-16 12:05:34] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2018-04-16 12:05:36] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2018-04-16 14:05:47] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-04-16 14:05:48] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-04-16 14:05:48] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-04-16 14:05:51] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-04-16 14:10:10] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-04-16 14:10:18] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-04-16 14:10:18] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-04-16 14:10:21] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.

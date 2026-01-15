@@ -1,0 +1,71 @@
+[2018-12-02 09:08:03] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-02 09:08:08] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-02 09:08:08] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::Initialize()>.
+System.ApplicationException: Аварийное завершение инициализации фискального регистратора ---> System.ApplicationException: 24 часа кончились, для продолжения работы необходимо запустить печать Z-отчета
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 352
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 357
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_87da2be9659f4a2096bc9af62561c1c4.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2018-12-02 09:08:08] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2018-12-02 09:08:08] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2018-12-02 09:08:08] [ERROR] [App] - System.ApplicationException: Аварийное завершение инициализации фискального регистратора ---> System.ApplicationException: 24 часа кончились, для продолжения работы необходимо запустить печать Z-отчета
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 352
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 357
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_87da2be9659f4a2096bc9af62561c1c4.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_2426e9e1cadf4833b7866f87a8151892.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2018-12-02 09:11:00] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2018-12-02 09:11:00] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2018-12-02 09:11:01] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2018-12-02 09:11:02] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintZReport()>.
+[2018-12-02 09:11:02] [DEBUG] [GeneralAppender] - Executing method: <UserService::IsInRole(String)>.
+[2018-12-02 09:11:10] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintShiftSummaryReport()>.
+[2018-12-02 09:11:11] [DEBUG] [GeneralAppender] - Executing method: <UserService::IsInRole(String)>.
+[2018-12-02 09:11:15] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-02 09:11:15] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logoff()>.
+[2018-12-02 09:11:24] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2018-12-02 09:11:25] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2018-12-02 09:11:25] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::GetAcceptableBillDenominations()>.
+[2018-12-02 09:11:25] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2018-12-02 09:11:25] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2018-12-02 09:11:25] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2018-12-02 09:11:25] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2018-12-02 09:11:25] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2018-12-02 09:11:25] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2018-12-02 09:11:25] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2018-12-02 09:11:25] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2018-12-02 09:12:17] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2018-12-02 09:12:17] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2018-12-02 09:12:17] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2018-12-02 09:12:19] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2018-12-02 09:12:19] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
+[2018-12-02 12:59:25] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-02 12:59:39] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-02 12:59:39] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-02 12:59:42] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-02 13:05:30] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-02 13:05:36] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-02 13:05:36] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-02 13:05:38] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-02 13:06:01] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformation(Int32)>.
+[2018-12-02 13:40:21] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-02 13:40:24] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-02 13:40:24] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-02 13:40:26] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-02 13:44:19] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-02 13:44:27] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-02 13:44:27] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-02 13:44:30] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.

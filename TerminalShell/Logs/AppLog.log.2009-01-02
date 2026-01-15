@@ -1,0 +1,4 @@
+[2009-01-02 00:09:10] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2009-01-02 00:09:10] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2009-01-02 00:09:10] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2009-01-02 00:09:12] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.

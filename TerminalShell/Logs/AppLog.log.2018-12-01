@@ -1,0 +1,60 @@
+[2018-12-01 10:10:23] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformation(Int32)>.
+[2018-12-01 13:07:45] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-01 13:07:51] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-01 13:07:51] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-01 13:12:18] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-01 13:12:25] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-01 13:12:25] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-01 13:12:28] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-01 13:16:09] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-01 13:16:11] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-01 13:16:12] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-01 13:16:14] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-01 13:21:03] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-01 13:21:10] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-01 13:21:10] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-01 13:21:13] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-01 13:29:16] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-01 13:29:20] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-01 13:29:20] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-01 13:37:29] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-01 13:37:31] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-01 13:37:31] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-01 13:37:34] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-01 13:42:30] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-01 13:42:32] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-01 13:42:32] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-01 13:42:35] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-01 13:46:54] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-01 13:47:00] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-01 13:47:00] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2018-12-01 13:47:02] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2018-12-01 18:16:50] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2018-12-01 18:16:54] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2018-12-01 18:16:54] [ERROR] [GeneralAppender] - Error executing method: <FiscalRegister::Initialize()>.
+System.ApplicationException: јварийное завершение инициализации фискального регистратора ---> System.ApplicationException: 24 часа кончились, дл€ продолжени€ работы необходимо запустить печать Z-отчета
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 352
+   ---  онец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 357
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_a1b819b933704adeb873ffb13020cb19.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2018-12-01 18:16:54] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2018-12-01 18:16:54] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2018-12-01 18:16:54] [ERROR] [App] - System.ApplicationException: јварийное завершение инициализации фискального регистратора ---> System.ApplicationException: 24 часа кончились, дл€ продолжени€ работы необходимо запустить печать Z-отчета
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 352
+   ---  онец трассировки внутреннего стека исключений ---
+   в TermClasses.ShtrihMiniFiscalRegister.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\ShtrihMiniFiscalRegister.vb:строка 357
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.FiscalRegister.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_a1b819b933704adeb873ffb13020cb19.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_a3aa20f0a4c54e8faf9b70e374352a21.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()

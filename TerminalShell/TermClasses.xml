@@ -1,0 +1,310 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TermClasses
+</name>
+</assembly>
+<members>
+<member name="T:TermClasses.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TermClasses.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TermClasses.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:TermClasses.ITerminalBillValidator">
+ <summary>
+ Интерфейс доступа к приемнику купюр.
+ </summary>
+</member>
+<member name="M:TermClasses.ITerminalBillValidator.Initialize">
+ <summary>
+ Инициализация устройства.
+ 
+ Производится программный сброс устройства, в ходе которого выполняются следующие операции:
+ 1) если в аппарате присутствует не акцептированная купюра (в тракте валидации), возврат ее пользователю (если сброс этого не делает)
+ 2) сброс устройства
+ 3) перевод в режим готовности (если сброс этого не делает).
+ Если при инициализации происходит ошибка (порт занят, устройство не отвечает и т.п.), бросается исключение.
+ 
+ Следует иметь в виду, что если не вызывать этот метод после создания экземпляра объекта, то устройство остается в предыдущем состоянии.
+ </summary>
+</member>
+<member name="M:TermClasses.ITerminalBillValidator.AcceptMoney(System.Int32)">
+ <summary>
+ Запрос к купюроприемнику на ожидание ввода купюры.
+ Вызывающий код будет циклически (возможно в цикле, по таймеру или по какой-то своей логике) вызывать этот метод.
+ Время одного цикла составляет время до акцептирования первой введенной купюры, либо по истечению предельного времени ожидания (передается параметром),
+ либо по возникновению неисправимой ошибки.
+ В случае наблюдения активности со стороны пользователя (купюра введена, но не акцептирована, то есть возвращена пользователю) начинать отсчет времени
+ ожидания поступления купюры с начала.
+ Если при выполнении происходит ошибка, бросается исключение.
+ </summary>
+ <param name="waitMillis">предельное время ожидания ввода купюр. Если за это время купюра не поступила, то происходит возврат управления</param>
+ <returns>номинал полученной купюры, либо 0 если купюра не была введена. Если произошла ошибка - бросается исключение</returns>
+</member>
+<member name="M:TermClasses.ITerminalBillValidator.AcceptMoneyInterruptable(System.Boolean@)">
+ <summary>
+ Запрос к купюроприемнику на ожидание ввода купюры.
+ Асинхронная работа.
+ Для использования этого метода необходимо GUI вынести в отдельный поток.
+ При выполнении метода будет периодически опрашиваться переменная, переданная по ссылке параметром, в случае установки которой в 1 бедет
+ завершен процесс ожидания ввода купюр. 
+ Начатый процесс приема банкноты всегда выполняется до конца прежде чем будет передано управление вызывающему коду.
+ Таймаута ожидания в реализации метода не предусмотрено.
+ </summary>
+ <param name="interrupt">ссылка на переменную, которая является индикатором необходимости прекращения ожидания приема денег</param>
+ <returns>номинал полученной купюры, либо 0 если купюра не была введена. Если произошла ошибка - бросается исключение</returns>
+</member>
+<member name="M:TermClasses.ITerminalBillValidator.GetAcceptableBillDenominations">
+ <summary>
+ Запрос списка принимаемых в данной сессии купюроприемником купюр.
+ Возвращается именно список номиналов, которые активны в текущей сессии, то есть те, которые были прочитаны при последней инициализации, 
+ либо дефолтные (все доступные аппаратно), если инициализация вызвана не была.
+ </summary>
+ <returns>список номиналов принимаемых купюр, указанных в рублях</returns>
+</member>
+<member name="T:TermClasses.ITerminalFiscalRegister">
+ <summary>
+ Интерфейс доступа к фискальному регистратору (ФР).
+ </summary>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.Initialize">
+ <summary>
+ Инициализация устройства.
+ 
+ В методе выполняется программный сброс устройства, в ходе которого выполняются следующие операции:
+ 1) если в аппарате присутствует незавершенный чек, отмена его, извлечение и отрез (если сброс этого не делает)
+ 2) сброс устройства
+ 3) перевод в режим готовности (если сброс этого не делает).
+ 
+ Если при инициализации происходит ошибка (порт занят, устройство не отвечает и т.п.), бросается исключение.
+ </summary>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintRentalReceipt(System.Collections.Generic.IList{TermClasses.DayRentalPaymentInfo})">
+ <summary>
+ Печать чека об оплате аренды.
+ Формируется и выводится на печать фискальный документ.
+ Каждый оплачиваемый день аренды должен идти отдельной строкой со следующими полями: 
+ 1) наименование товара - "Аренда места№__ за _._.___". В случае недоплаты, доплаты или переплаты дописывать в конце " /частично", "/доплата" или "/переплата" соответственно. 
+ 2) количество - 1 
+ 3) цена - цена аренды этого дня или размер доплаты неполностью оплаченого дня или размер остатка на последний оплачиваемый день 
+ 
+  Считать суммой принятых денег сумму переданных платежей по всем дням. 
+ </summary>
+ <param name="paymentsInfo">информация об оплатах и стоимостях аренды одного места по дням аренды</param>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintAdditionalServiceReceipt(System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Печать чека об оплате дополнительной услуги.
+ Формируется и выводится на печать фискальный документ.
+ Чек на оплату дополнительной услуги должен выводиться одной строкой со следующими полями: 
+ 1) наименование товара - наименование услуги. В случае недоплаты или переплаты дописывать в конце " /частично", "/переплата" соответственно. При формировании строки наименования товара обрезать наименование услуги таким образом, чтобы полная строка наименования товара была не более 40 символов длиной. 
+ 2) количество - 1 
+ 3) цена - сумма внесенных денег  
+  </summary>
+ <param name="serviceName">Наименование услуги</param>
+ <param name="servicePrice">Цена услуги. Используется только для опеределения факта переплаты и недоплаты</param>
+ <param name="paidSum">Сумма внесенных денег</param>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintUnpaidRentalPlacesReport(System.DateTime,System.Collections.Generic.IList{System.String})">
+ <summary>
+ Печать отчета по неоплаченным местам на чековой ленте.
+ Формируется и выводится на печать документ произвольного вида. 
+ Формат документа: 
+ 1) строка заголовка - "      Список неоплаченных мест за _..___" 
+ 2) разделитель - пустая строка 
+ 3) необходимое количество строк с номерами неоплаченных мест в формате 
+                       "sssssss sssssss sssssss sssssss sssssss sssssss" (табулированный список, выравнивание номеров по левому краю в маске) 
+ 4) отрезать
+ Новый вариант
+ 1) пустая строка
+ 2) пустая строка
+ 3) строка заголовка - "      СПИСОК НЕОПЛАЧЕННЫХ МЕСТ ЗА dd.MM.yyyy"
+ 4) разделитель - пустая строка 
+ 5) строка заголовка - "        Отчет сформирован dd.MM.yyyy hh:mm" - текущее время
+ 6) разделитель - пустая строка 
+ 7) необходимое количество строк с номерами неоплаченных мест в формате 
+                       "  sssssss sssssss sssssss sssssss sssssss sssssss" (табулированный список, выравнивание номеров по левому краю в маске) 
+ 8) пустая строка
+ 9) разделитель -      "================== Конец отчета =================="
+ 6) отрезать
+ </summary>
+ <param name="controlDate">дата контроля</param>
+ <param name="unpaidPlaces">список неоплаченных на дату контроля мест</param>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintXReport">
+ <summary>
+ Печать X-отчета.
+ Вызов штатного метода печати X-отчета фискальным регистратором.
+ </summary>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintZReport">
+ <summary>
+ Печать Z-отчета.
+ Вызов штатного метода печати Z-отчета фискальным регистратором.
+ </summary>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintShiftSummaryReport(System.String,System.Collections.Generic.IList{TermClasses.ServiceShiftSummaryInfo})">
+ <summary>
+ Печать отчета о смене с детализацией по услугам.
+ Если при выполнении происходит ошибка, бросается исключение.
+ 
+ Формат документа: 
+ 1) пустая строка
+ 2) пустая строка
+ 3) строка заголовка - "     ДЕТАЛИЗАЦИЯ СУТОЧНОГО ОТЧЕТА ПО УСЛУГАМ" 
+ 4) строка заголовка - "     ТЕРМИНАЛ: sssssssssssssssssssssssssssssssssss" 
+ 5) пустая строка
+ 6) строка заголовка - "        Отчет сформирован dd.MM.yyyy hh:mm" - текущее время
+ 7) пустая строка
+ 8) цикл строк по списку услуг - 
+                       "sssssssssssssssssssssssssssssssssss  #########0.00"
+    после каждой строки пустая строка
+ 9) разделитель -      "=================================================="
+ 10) строка -           "ИТОГО:			                    #########0.00"
+ 11) пустая строка
+ 12) разделитель -     "================== Конец отчета =================="
+ 13) отрезать
+ </summary>
+ <param name="terminalName">имя терминала (номер кассы и т.п.)</param>
+ <param name="servicesShiftInfo">информация об итогах смены по услугам</param>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintParkingToken(System.DateTime,System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Печать парковочного талона
+ </summary>
+ <param name="StartDate">дата, время заезда</param>
+ <param name="BarCode">номер парковочного талона, составной номер дата_заезда.номер_талона</param>
+ <param name="Price">стоимость парковки за час</param>
+ <param name="Penalty">стоимость парковки без учёта времени</param>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintParkingExitTicket(System.String,System.DateTime,System.DateTime,System.Boolean,System.Decimal)">
+ <summary>
+ Печать выездного талона
+ </summary>
+ <param name="CardNumber">номер парковочной карты</param>
+ <param name="StartDate">дата, время заезда</param>
+ <param name="FinishDate">дата, время оплаты</param>
+ <param name="ExternalPayment">парковка будет оплачена в системе ParkTime</param>
+ <param name="PaidSum">оплаченная сумма</param>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintParkingPerHourReceipt(System.String,System.DateTime,System.DateTime,System.Decimal,System.Decimal,System.Decimal)">
+ <summary>
+ Печать чека для парковки почасовой
+ </summary>
+ <param name="ParkingTicketNumber">Номер парковочного талона</param>
+ <param name="StartDate">Дата заезда</param>
+ <param name="EndDate">Даты выезда</param>
+ <param name="servicePrice">тариф за 1 час парковки</param>
+ <param name="needPaySum">сумма которую необходимо заплатить 
+ Вариант 1. Если кол-во часов парковки меньше или равно 4 часа, то платим кол-во часов * тариф за 1 час
+ Вариант 2. Если кол-во часов парковки больше 4 часа, то платим тариф парковки без учёта времени - 500 руб
+ </param>
+ <param name="realPaySum">сумма реально оплаченная</param>
+ <remarks></remarks>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintParkingWithoutTimeReceipt(System.Decimal,System.Decimal)">
+ <summary>
+ Печать чека для парковки без учёта времени или потери парковочного талона
+ </summary>
+ <param name="servicePrice">тариф услуги парковка без учёта времени</param>
+ <param name="realPaySum">сумма реально оплаченная</param>
+ <remarks></remarks>
+</member>
+<member name="M:TermClasses.ITerminalFiscalRegister.PrintAccessCode(System.String)">
+ <summary>
+ Печать штрих кода администратора зала для выдачи парковочного талона
+ </summary>
+</member>
+<member name="T:TermClasses.DayRentalPaymentInfo">
+ <summary>
+ Информация об оплате аренды за один день.
+ </summary>
+</member>
+<member name="P:TermClasses.DayRentalPaymentInfo.PlaceNumber">
+ <summary>
+ Номер места, за которое производится оплата.
+ </summary>
+</member>
+<member name="P:TermClasses.DayRentalPaymentInfo.Date">
+ <summary>
+ Дата, за которую производится оплата.
+ </summary>
+</member>
+<member name="P:TermClasses.DayRentalPaymentInfo.Price">
+ <summary>
+ Стоимость аренды за указанный день.
+ Используется для определения факта переплаты и недоплаты.
+ </summary>
+</member>
+<member name="P:TermClasses.DayRentalPaymentInfo.PaidSum">
+ <summary>
+ Сумма внесенных денег за оплату указанного дня.
+ </summary>
+</member>
+<member name="T:TermClasses.ServiceShiftSummaryInfo">
+ <summary>
+ Информация об итогах смены по одной услуге.
+ </summary>
+</member>
+<member name="P:TermClasses.ServiceShiftSummaryInfo.ServiceName">
+ <summary>
+ Наименование услуги.
+ </summary>
+</member>
+<member name="P:TermClasses.ServiceShiftSummaryInfo.ServiceQuantity">
+ <summary>
+ Количество продаж услуги.
+ </summary>
+</member>
+<member name="P:TermClasses.ServiceShiftSummaryInfo.ServicePaidTotal">
+ <summary>
+ Сумма по услуге.
+ </summary>
+</member>
+<member name="M:TermClasses.ShtrihMiniFiscalRegister.PrintWhiteSpace(System.Int32)">
+ <summary>
+ Делает пропуск строк на принтере ФР
+ </summary>
+ <param name="lines">количество пустых строк</param>
+</member>
+<member name="M:TermClasses.ShtrihMiniFiscalRegister.PrintString(System.String,TermClasses.ShtrihMiniFiscalRegister.Alignment,System.Boolean)">
+ <summary>
+ Печатает строку текста на принтере ФР
+ </summary>
+ <param name="text">текст для печати</param>
+ <param name="huge">печатать самым большим (широким и высоким) шрифтом, иначе стандартным</param>
+</member>
+<member name="M:TermClasses.ShtrihMiniFiscalRegister.PrintBarcode(System.String,TermClasses.ShtrihMiniFiscalRegister.BarcodeType,TermClasses.ShtrihMiniFiscalRegister.Alignment,System.Int32,System.Int32)">
+ <summary>
+ Печатает штрихкод на принтере ФР
+ </summary>
+ <param name="value">значение штрихкода</param>
+ <param name="type">тип штрихкода</param>
+ <param name="alignment">выравнивание штрихкода</param>
+ <param name="barHeight">высота штриха</param>
+ <param name="barWidth">ширина штриха</param>
+</member>
+<member name="M:TermClasses.ShtrihMiniFiscalRegister.PrintParkingExitTicket(System.String,System.DateTime,System.DateTime,System.Boolean,System.Decimal)">
+ <summary>
+ Печать выездного талона
+ </summary>
+ <param name="CardNumber">номер парковочной карты</param>
+ <param name="StartDate">дата, время заезда</param>
+ <param name="FinishDate">дата, время оплаты</param>
+ <param name="ExternalPayment">парковка будет оплачена в системе ParkTime</param>
+ <param name="PaidSum">оплаченная сумма</param>
+</member>
+</members>
+</doc>

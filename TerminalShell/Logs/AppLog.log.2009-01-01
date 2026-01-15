@@ -1,0 +1,6 @@
+[2009-01-01 00:02:09] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2009-01-01 00:02:11] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2009-01-01 00:02:11] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2009-01-01 00:03:19] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2009-01-01 00:03:23] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2009-01-01 00:03:23] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.

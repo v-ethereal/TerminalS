@@ -1,0 +1,576 @@
+[2020-03-16 14:40:38] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 14:40:55] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2020-03-16 14:40:56] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 14:40:56] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 14:41:01] [ERROR] [GeneralAppender] - Аварийное завершение инициализации купюроприемника
+System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+[2020-03-16 14:41:01] [ERROR] [GeneralAppender] - Error executing method: <BanknoteAcceptor::Initialize()>.
+Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_5080be52fd2140d68694f12b5f227c79.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2020-03-16 14:41:01] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 14:41:01] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2020-03-16 14:41:01] [ERROR] [App] - Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_5080be52fd2140d68694f12b5f227c79.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_1bd8f578df3e45129ff3304dc9d6def0.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2020-03-16 14:41:11] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 14:45:03] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2020-03-16 14:45:06] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 14:45:06] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 14:45:11] [ERROR] [GeneralAppender] - Аварийное завершение инициализации купюроприемника
+System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+[2020-03-16 14:45:11] [ERROR] [GeneralAppender] - Error executing method: <BanknoteAcceptor::Initialize()>.
+Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_08a28ce452f04a629fc3c10d85d01243.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2020-03-16 14:45:12] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 14:45:12] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2020-03-16 14:45:12] [ERROR] [App] - Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_08a28ce452f04a629fc3c10d85d01243.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_bdc9fa1e4b4a4eee97614a77bf2f6090.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2020-03-16 14:45:36] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:45:37] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 14:45:37] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:45:37] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 14:45:40] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:45:40] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 14:45:41] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:45:44] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintAdditionalServiceReceipt(String, Decimal, Decimal)>.
+[2020-03-16 14:45:55] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logoff()>.
+[2020-03-16 14:46:03] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:46:03] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 14:46:10] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:46:10] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 14:46:10] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:46:11] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 14:46:11] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 14:46:16] [ERROR] [GeneralAppender] - Аварийное завершение инициализации купюроприемника
+System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+[2020-03-16 14:46:16] [ERROR] [GeneralAppender] - Error executing method: <BanknoteAcceptor::Initialize()>.
+Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_08a28ce452f04a629fc3c10d85d01243.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2020-03-16 14:46:16] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 14:46:16] [ERROR] [AppDomain] - Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_08a28ce452f04a629fc3c10d85d01243.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_bdc9fa1e4b4a4eee97614a77bf2f6090.Initialize()
+   в Arsis.RentalSystem.TerminalShell.InitializePage.btnReInitialize_Click(Object sender, RoutedEventArgs e)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   в System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   в System.Windows.Controls.Button.OnClick()
+   в System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+[2020-03-16 14:46:16] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2020-03-16 14:46:53] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 14:51:08] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2020-03-16 14:51:10] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 14:51:10] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 14:51:16] [ERROR] [GeneralAppender] - Аварийное завершение инициализации купюроприемника
+System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+[2020-03-16 14:51:16] [ERROR] [GeneralAppender] - Error executing method: <BanknoteAcceptor::Initialize()>.
+Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_2cb13964687a4b7ca9192682ba441b9b.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2020-03-16 14:51:16] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 14:51:16] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2020-03-16 14:51:16] [ERROR] [App] - Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_2cb13964687a4b7ca9192682ba441b9b.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_465534fad0814ffb9a3c66bbf1f0cb18.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2020-03-16 14:52:40] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 14:55:09] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2020-03-16 14:55:09] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 14:55:10] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 14:55:15] [ERROR] [GeneralAppender] - Аварийное завершение инициализации купюроприемника
+System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+[2020-03-16 14:55:15] [ERROR] [GeneralAppender] - Error executing method: <BanknoteAcceptor::Initialize()>.
+Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_177958563ebc4d9da43f9fa2dd7f6374.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2020-03-16 14:55:15] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 14:55:15] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2020-03-16 14:55:15] [ERROR] [App] - Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_177958563ebc4d9da43f9fa2dd7f6374.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_6c744b35c6c84916891f1f638f190b2d.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2020-03-16 14:57:08] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:57:08] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 14:57:20] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:57:20] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 14:57:59] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:57:59] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 14:58:21] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 14:58:21] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 15:00:04] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:00:04] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 15:00:16] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:00:16] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 15:00:17] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:00:18] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 15:00:18] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 15:00:23] [ERROR] [GeneralAppender] - Аварийное завершение инициализации купюроприемника
+System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+[2020-03-16 15:00:23] [ERROR] [GeneralAppender] - Error executing method: <BanknoteAcceptor::Initialize()>.
+Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_177958563ebc4d9da43f9fa2dd7f6374.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2020-03-16 15:00:23] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 15:00:23] [ERROR] [AppDomain] - Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_177958563ebc4d9da43f9fa2dd7f6374.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_6c744b35c6c84916891f1f638f190b2d.Initialize()
+   в Arsis.RentalSystem.TerminalShell.InitializePage.btnReInitialize_Click(Object sender, RoutedEventArgs e)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   в System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   в System.Windows.Controls.Button.OnClick()
+   в System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+[2020-03-16 15:00:23] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2020-03-16 15:08:07] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2020-03-16 15:08:09] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 15:08:09] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 15:08:15] [ERROR] [GeneralAppender] - Аварийное завершение инициализации купюроприемника
+System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+[2020-03-16 15:08:16] [ERROR] [GeneralAppender] - Error executing method: <BanknoteAcceptor::Initialize()>.
+Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_f174d6df93934ea48f2600da69b12865.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2020-03-16 15:08:16] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 15:08:16] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2020-03-16 15:08:16] [ERROR] [App] - Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_f174d6df93934ea48f2600da69b12865.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_7fddbb1d4ae3434bb773f035b9a57054.Initialize()
+   в Arsis.RentalSystem.TerminalShell.App..ctor()
+[2020-03-16 15:09:22] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:09:23] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 15:09:23] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:09:25] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 15:09:26] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 15:09:30] [ERROR] [GeneralAppender] - Аварийное завершение инициализации купюроприемника
+System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+[2020-03-16 15:09:30] [ERROR] [GeneralAppender] - Error executing method: <BanknoteAcceptor::Initialize()>.
+Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_f174d6df93934ea48f2600da69b12865.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2020-03-16 15:09:30] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 15:09:31] [ERROR] [AppDomain] - Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_f174d6df93934ea48f2600da69b12865.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_7fddbb1d4ae3434bb773f035b9a57054.Initialize()
+   в Arsis.RentalSystem.TerminalShell.InitializePage.btnReInitialize_Click(Object sender, RoutedEventArgs e)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   в System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   в System.Windows.Controls.Button.OnClick()
+   в System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+[2020-03-16 15:09:31] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2020-03-16 15:09:44] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:09:45] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 15:09:45] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:09:46] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 15:09:46] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 15:09:51] [ERROR] [GeneralAppender] - Аварийное завершение инициализации купюроприемника
+System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+[2020-03-16 15:09:51] [ERROR] [GeneralAppender] - Error executing method: <BanknoteAcceptor::Initialize()>.
+Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_f174d6df93934ea48f2600da69b12865.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+[2020-03-16 15:09:51] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 15:09:51] [ERROR] [AppDomain] - Exception: System.ApplicationException: Аварийное завершение инициализации купюроприемника ---> System.ApplicationException: Ошибки при выполнении команды RESET
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1083
+   --- Конец трассировки внутреннего стека исключений ---
+   в TermClasses.CashCodeSMBillValidator.Initialize() в D:\Arsis_Src\DomodedTerm\Src\TermDevices\TermClasses\CashCodeSMBillValidator.vb:строка 1118
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+Аварийное завершение инициализации купюроприемника
+   в Arsis.RentalSystem.TerminalShell.BLL.Services.BanknoteAcceptor.Initialize()
+   в Spring.DynamicReflection.Method_Initialize_f174d6df93934ea48f2600da69b12865.Invoke(Object target, Object[] args)
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Arsis.RentalSystem.Core.Bll.LoggingInterceptor.Invoke(IMethodInvocation invocation)
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   в Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   в CompositionAopProxy_7fddbb1d4ae3434bb773f035b9a57054.Initialize()
+   в Arsis.RentalSystem.TerminalShell.InitializePage.btnReInitialize_Click(Object sender, RoutedEventArgs e)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   в System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   в System.Windows.Controls.Button.OnClick()
+   в System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   в System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   в System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   в System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   в System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   в System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   в System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   в System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   в System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   в System.Windows.Input.InputManager.ProcessStagingArea()
+   в System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   в System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   в System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   в System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   в MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   в System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   в System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+[2020-03-16 15:09:51] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::SetErrorStatus()>.
+[2020-03-16 15:10:06] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:10:06] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 15:10:06] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:10:07] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Stop()>.
+[2020-03-16 15:13:31] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2020-03-16 15:13:32] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 15:13:32] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 15:13:35] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2020-03-16 15:13:43] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformation(Int32)>.
+[2020-03-16 15:13:47] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2020-03-16 15:13:47] [DEBUG] [GeneralAppender] - Executing method: <ServicesService::GetServiceInformation(Int32)>.
+[2020-03-16 15:13:47] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::GetAcceptableBillDenominations()>.
+[2020-03-16 15:13:47] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginServiceTransaction(String)>.
+[2020-03-16 15:13:47] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2020-03-16 15:13:47] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2020-03-16 15:13:50] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2020-03-16 15:13:50] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2020-03-16 15:13:50] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2020-03-16 15:13:52] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2020-03-16 15:25:40] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:25:40] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 15:26:39] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2020-03-16 15:26:40] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 15:26:40] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 15:26:43] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2020-03-16 15:31:08] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2020-03-16 15:31:11] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 15:31:11] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 15:31:13] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2020-03-16 15:31:56] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:31:57] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 15:31:58] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:32:58] [DEBUG] [GeneralAppender] - Executing method: <TerminalService::Start()>.
+[2020-03-16 15:32:58] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::Initialize()>.
+[2020-03-16 15:32:59] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::Initialize()>.
+[2020-03-16 15:33:01] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::Initialize()>.
+[2020-03-16 15:33:16] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:33:16] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logon(String, String)>.
+[2020-03-16 15:33:16] [DEBUG] [GeneralAppender] - Executing method: <UserService::GetUserRoles(String)>.
+[2020-03-16 15:33:18] [DEBUG] [GeneralAppender] - Executing method: <FiscalRegister::PrintUnpaidRentalPlacesReport(DateTime)>.
+[2020-03-16 15:33:18] [DEBUG] [GeneralAppender] - Executing method: <UserService::IsInRole(String)>.
+[2020-03-16 15:33:18] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetNotPaidRentalFees(DateTime)>.
+[2020-03-16 15:33:27] [DEBUG] [GeneralAppender] - Executing method: <UserService::Logoff()>.
+[2020-03-16 15:33:37] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::CheckPayPossibility(String)>.
+[2020-03-16 15:33:38] [DEBUG] [GeneralAppender] - Executing method: <RentalPlaceService::GetRentalPlaceInfo(String)>.
+[2020-03-16 15:33:39] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::GetAcceptableBillDenominations()>.
+[2020-03-16 15:33:39] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2020-03-16 15:33:39] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::GetPayDates(String, String)>.
+[2020-03-16 15:33:39] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsFirstBelongDate(String, String, DateTime)>.
+[2020-03-16 15:33:39] [DEBUG] [GeneralAppender] - Executing method: <RentalFeeService::IsHoliday(String, String, DateTime)>.
+[2020-03-16 15:33:39] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::BeginRentalTransaction(String, String)>.
+[2020-03-16 15:33:39] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::add_ReceiveMoneyEvent(EventHandler`1)>.
+[2020-03-16 15:33:39] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StartWaitMoney()>.
+[2020-03-16 15:33:39] [DEBUG] [GeneralAppender] - Начинаем ждать поступления денег
+[2020-03-16 15:34:45] [DEBUG] [GeneralAppender] - Executing method: <BanknoteAcceptor::StopWaitMoney()>.
+[2020-03-16 15:34:45] [DEBUG] [GeneralAppender] - Инициировано завершение ожидания денег, ждем 2 секунды
+[2020-03-16 15:34:45] [DEBUG] [GeneralAppender] - Деньги поступили в купюроприемник
+[2020-03-16 15:34:47] [DEBUG] [GeneralAppender] - 2 секунды прошло, отрубаемся от купюроприемника
+[2020-03-16 15:34:47] [DEBUG] [GeneralAppender] - Executing method: <TransactionService::EndRentalTransaction()>.
