@@ -77,7 +77,7 @@ namespace Arsis.RentalSystem.TerminalShell.MVP.Presenter
             }
         }
 
-        private void BanknoteAcceptorReceiveMoneyEvent(object sender, BanknoteAcceptorEventArgs e)
+        private void BanknoteAcceptorReceiveMoneyEventOld(object sender, BanknoteAcceptorEventArgs e)
         {
             inReceiveMoneyEventHandler = true;
             if (e.ReceiveMoney > 0)
@@ -103,9 +103,44 @@ namespace Arsis.RentalSystem.TerminalShell.MVP.Presenter
             inReceiveMoneyEventHandler = false;
         }
 
+		private void BanknoteAcceptorReceiveMoneyEvent(object sender, BanknoteAcceptorEventArgs e)
+		{
+			inReceiveMoneyEventHandler = true;
+			try
+			{
+				if (e.ReceiveMoney > 0)
+				{
+					view.UpdateGui();
+				}
 
-        /// логику закрытия транзакции по парковочному талону собираем в один метод
-        private void EndParkingServiceTransaction()
+				totalReceiveMoney += e.ReceiveMoney;
+				currentReceiveMoney += e.ReceiveMoney;
+
+				var debt = (int)(parkingInfo.TotalSum - currentReceiveMoney - parkingInfo.EarlyPaidSum);
+
+				view.SetMoneyAmount(currentReceiveMoney, debt < 0 ? 0 : debt);
+
+				transactionService.ProceedServicePayment(serviceInformation.Id, serviceInformation.Name,
+														 parkingInfo.CostPerHour, e.ReceiveMoney);
+
+				if (totalReceiveMoney >= parkingInfo.TotalSum)
+				{
+					// Завершение на отдельном потоке, чтобы избежать deadlock
+					ThreadPool.QueueUserWorkItem(_ =>
+					{
+						banknoteAcceptor.StopWaitMoney();
+						EndParkingServiceTransaction();
+					});
+				}
+			}
+			finally
+			{
+				inReceiveMoneyEventHandler = false;
+			}
+		}
+
+		/// логику закрытия транзакции по парковочному талону собираем в один метод
+		private void EndParkingServiceTransaction()
         {
             if (transactionService.ServiceTransactionInformation == null)
             {

@@ -17,9 +17,9 @@
                 <RowDefinition Height="*" />
 				<RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Button Content="Îïëàòà àðåíäû" x:Name="btnRentalPayment" Style="{DynamicResource MenuButtonStyle}" Grid.Row="1" Click="btnRentalPayment_Click" />
-            <Button Content="Ïðî÷èå óñëóãè" x:Name="btnOther" Style="{DynamicResource MenuButtonStyle}" Grid.Row="2" Click="btnOther_Click" />
-			<Button Content="Ïàðêîâêà" x:Name="btnParking" Style="{DynamicResource MenuButtonStyle}" Grid.Row="3" Click="btnParking_Click" />
+            <Button Content="ÐžÐ¿Ð»Ð°Ñ‚Ð° Ð°Ñ€ÐµÐ½Ð´Ñ‹" x:Name="btnRentalPayment" Style="{DynamicResource MenuButtonStyle}" Grid.Row="1" Click="btnRentalPayment_Click" />
+            <Button Content="ÐŸÑ€Ð¾Ñ‡Ð¸Ðµ ÑƒÑÐ»ÑƒÐ³Ð¸" x:Name="btnOther" Style="{DynamicResource MenuButtonStyle}" Grid.Row="2" Click="btnOther_Click" />
+			<Button Content="ÐŸÐ°Ñ€ÐºÐ¾Ð²ÐºÐ°" x:Name="btnParking" Style="{DynamicResource MenuButtonStyle}" Grid.Row="3" Click="btnParking_Click" />
 			<Label Content="" x:Name="labelMessage" Grid.Row="4" Foreground="Red" FontSize="30" HorizontalAlignment="Center"/>
         </Grid>
         <Grid Background="Black" Grid.Row="1" />
@@ -33,10 +33,10 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Button x:Name="btnAdminLogon" Style="{DynamicResource LogonButtonStyle}" HorizontalAlignment="Left" Click="btnAdminLogon_Click">
-                <TextBlock Text="Âõîä äëÿ àäìèíèñòðàòîðà" TextWrapping="Wrap" TextAlignment="Center" FontSize="15" />
+                <TextBlock Text="Ð’Ñ…Ð¾Ð´ Ð´Ð»Ñ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€Ð°" TextWrapping="Wrap" TextAlignment="Center" FontSize="15" />
             </Button>
             <Label x:Name="lblClock"  Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFFFFFF" />
-            <Label Content="ßðìàðî÷íûé Êîìïëåêñ &quot;Äîìîäåäîâñêèé&quot;" Grid.Column="2" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#FFFFFFFF" />
+            <Label Content="Ð¯Ñ€Ð¼Ð°Ñ€Ð¾Ñ‡Ð½Ñ‹Ð¹ ÐšÐ¾Ð¼Ð¿Ð»ÐµÐºÑ &quot;Ð”Ð¾Ð¼Ð¾Ð´ÐµÐ´Ð¾Ð²ÑÐºÐ¸Ð¹&quot;" Grid.Column="2" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#FFFFFFFF" />
         </Grid>
     </Grid>
 </Page>

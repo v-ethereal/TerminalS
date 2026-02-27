@@ -8,7 +8,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
-        <Label HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="Âûáåðèòå íåîáõîäèìóþ îïåðàöèþ" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Foreground="#FFFFFFFF"/>
+        <Label HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼ÑƒÑŽ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸ÑŽ" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Foreground="#FFFFFFFF"/>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
@@ -20,17 +20,17 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btnXReport" Grid.Column="0" Content="X-îò÷åò" Style="{DynamicResource MenuButtonStyle}" Click="btnXReport_Click" FontSize="32"/>
-            <Button x:Name="RentalPayReportToday" Grid.Column="1" Style="{DynamicResource MenuButtonStyle}" Click="RentalPayReportToday_Click" Content="Íåîïëà÷åííûå ìåñòà (ñåãîäíÿ)" FontSize="32">
+            <Button x:Name="btnXReport" Grid.Column="0" Content="X-Ð¾Ñ‚Ñ‡ÐµÑ‚" Style="{DynamicResource MenuButtonStyle}" Click="btnXReport_Click" FontSize="32"/>
+            <Button x:Name="RentalPayReportToday" Grid.Column="1" Style="{DynamicResource MenuButtonStyle}" Click="RentalPayReportToday_Click" Content="ÐÐµÐ¾Ð¿Ð»Ð°Ñ‡ÐµÐ½Ð½Ñ‹Ðµ Ð¼ÐµÑÑ‚Ð° (ÑÐµÐ³Ð¾Ð´Ð½Ñ)" FontSize="32">
             </Button>
-            <Button x:Name="btnZReport" Grid.Row="1" Grid.Column="0" Content="Z-îò÷åò" Style="{DynamicResource MenuButtonStyle}" Click="btnZReport_Click" FontSize="32"/>
-            <Button x:Name="RentalPayReport" Grid.Row="1" Grid.Column="1" Style="{DynamicResource MenuButtonStyle}" Click="RentalPayReport_Click" Content="Íåîïëà÷åííûå ìåñòà (ïðîèçâîëüíûé äåíü)" FontSize="32">
+            <Button x:Name="btnZReport" Grid.Row="1" Grid.Column="0" Content="Z-Ð¾Ñ‚Ñ‡ÐµÑ‚" Style="{DynamicResource MenuButtonStyle}" Click="btnZReport_Click" FontSize="32"/>
+            <Button x:Name="RentalPayReport" Grid.Row="1" Grid.Column="1" Style="{DynamicResource MenuButtonStyle}" Click="RentalPayReport_Click" Content="ÐÐµÐ¾Ð¿Ð»Ð°Ñ‡ÐµÐ½Ð½Ñ‹Ðµ Ð¼ÐµÑÑ‚Ð° (Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð»ÑŒÐ½Ñ‹Ð¹ Ð´ÐµÐ½ÑŒ)" FontSize="32">
             </Button>
-            <Button x:Name="btnZeroReceipt" Grid.Row="2" Grid.Column="0" Style="{DynamicResource MenuButtonStyle}" Click="btnZeroReceipt_Click" Content="Íóëåâîé ÷åê" FontSize="32">
+            <Button x:Name="btnZeroReceipt" Grid.Row="2" Grid.Column="0" Style="{DynamicResource MenuButtonStyle}" Click="btnZeroReceipt_Click" Content="ÐÑƒÐ»ÐµÐ²Ð¾Ð¹ Ñ‡ÐµÐº" FontSize="32">
             </Button>
-            <Button x:Name="btnCloseApp" Grid.Row="2" Grid.Column="1" Style="{DynamicResource MenuButtonStyle}" Click="btnCloseApp_Click" Content="Âûõîä â ÎÑ" FontSize="32" >
+            <Button x:Name="btnCloseApp" Grid.Row="2" Grid.Column="1" Style="{DynamicResource MenuButtonStyle}" Click="btnCloseApp_Click" Content="Ð’Ñ‹Ñ…Ð¾Ð´ Ð² ÐžÐ¡" FontSize="32" >
             </Button>
-            <Button x:Name="btnImportCardAccounts" Grid.Row="3" Grid.Column="0" Style="{DynamicResource MenuButtonStyle}" Click="btnImportCardAccounts_Click" Content="Èìïîðò òàðèôîâ êàðò" FontSize="32" >
+            <Button x:Name="btnImportCardAccounts" Grid.Row="3" Grid.Column="0" Style="{DynamicResource MenuButtonStyle}" Click="btnImportCardAccounts_Click" Content="Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ Ñ‚Ð°Ñ€Ð¸Ñ„Ð¾Ð² ÐºÐ°Ñ€Ñ‚" FontSize="32" >
             </Button>
         </Grid>
         <Grid Grid.Row="4">

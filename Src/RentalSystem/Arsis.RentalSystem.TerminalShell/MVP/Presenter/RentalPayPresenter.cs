@@ -54,7 +54,8 @@ namespace Arsis.RentalSystem.TerminalShell.MVP.Presenter
                 return;
             }
 
-            view.Rate = payDatesInformation[0].Rate;
+			//view.Rate = 1000; // Для тестирования операции,
+			view.Rate = payDatesInformation[0].Rate;
 
             // находим сколько всего нужно заплатиить по договору
             fullSumma = payDatesInformation.Sum(item => item.Rate);
@@ -62,7 +63,9 @@ namespace Arsis.RentalSystem.TerminalShell.MVP.Presenter
             // то же самое за вычетом частично оплаченного дня (как правило первого дня из массива)
             fullSumma = fullSumma - payDatesInformation[0].PaidAmount;
 
-            view.InitView(view.RentalPlaceInformation);
+            //fullSumma = 1000; // Для тестирования операции
+
+			view.InitView(view.RentalPlaceInformation);
 
             transactionService.BeginRentalTransaction(view.RentalPlaceInformation.ContractNumber,
                                                       view.RentalPlaceInformation.Number);
@@ -104,7 +107,7 @@ namespace Arsis.RentalSystem.TerminalShell.MVP.Presenter
 
         #region event from banknoteAcceptor
 
-        private void BanknoteAcceptorReceiveMoneyEvent(object sender, BanknoteAcceptorEventArgs e)
+        private void BanknoteAcceptorReceiveMoneyEventOld(object sender, BanknoteAcceptorEventArgs e)
         {
             inReceiveMoneyEventHandler = true;
             if (e.ReceiveMoney == 0)
@@ -130,6 +133,42 @@ namespace Arsis.RentalSystem.TerminalShell.MVP.Presenter
             }
             inReceiveMoneyEventHandler = false;
         }
-        #endregion
-    }
+
+        private void BanknoteAcceptorReceiveMoneyEvent(object sender, BanknoteAcceptorEventArgs e)
+		{
+			inReceiveMoneyEventHandler = true;
+			try
+			{
+				if (e.ReceiveMoney == 0)
+				{
+					return;
+				}
+
+				totalReceiveMoney += e.ReceiveMoney;
+				view.FeeAmount += e.ReceiveMoney;
+
+				// сохраняем транзакцию на диск
+				transactionService.ProceedRentalPayment(e.ReceiveMoney);
+
+				// обновляем прогресс бар
+				view.UpdateProgressBar(e.ReceiveMoney);
+
+				if (totalReceiveMoney >= fullSumma)
+				{
+					// Завершение на отдельном потоке, чтобы избежать deadlock
+					ThreadPool.QueueUserWorkItem(_ =>
+					{
+						banknoteAcceptor.StopWaitMoney();
+						transactionService.EndRentalTransaction();
+						view.ShowAlertTakeCheck();
+					});
+				}
+			}
+			finally
+			{
+				inReceiveMoneyEventHandler = false;
+			}
+		}
+		#endregion
+	}
 }

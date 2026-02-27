@@ -49,7 +49,47 @@ namespace Arsis.RentalSystem.TerminalShell.MVP.Presenter
             view.RedirectOnTakePage(true);
         }
 
-        void BanknoteAcceptorReceiveMoneyEvent(object sender, BanknoteAcceptorEventArgs e)
+		void BanknoteAcceptorReceiveMoneyEvent(object sender, BanknoteAcceptorEventArgs e)
+		{
+			if (e.ReceiveMoney == 0)
+			{
+				return;
+			}
+
+			inReceiveMoneyEventHandler = true;
+
+			try
+			{
+				if (currentReceiveMoney == 0)
+				{
+					view.UpdateGui();
+				}
+
+				currentReceiveMoney += e.ReceiveMoney;
+
+				view.SetMoneyAmount(currentReceiveMoney, 0);
+
+				transactionService.ProceedServicePayment(serviceInformation.Id, serviceInformation.Name,
+					serviceInformation.Price, e.ReceiveMoney);
+
+				if (currentReceiveMoney >= serviceInformation.Price)
+				{
+					// Завершение оплаты на отдельном потоке, чтобы избежать deadlock
+					ThreadPool.QueueUserWorkItem(_ =>
+					{
+						banknoteAcceptor.StopWaitMoney();
+						transactionService.EndServiceTransaction();
+						view.RedirectOnTakePage(true);
+					});
+				}
+			}
+			finally
+			{
+				inReceiveMoneyEventHandler = false;
+			}
+		}
+
+		void BanknoteAcceptorReceiveMoneyEventOld(object sender, BanknoteAcceptorEventArgs e)
         {
             
             if (e.ReceiveMoney == 0)

@@ -86,7 +86,8 @@ namespace Arsis.RentalSystem.TerminalShell
                 if (btnPay.Visibility != Visibility.Visible)
                 {
                     btnPay.Visibility = Visibility.Visible;
-                }
+					//btnPay.Opacity = 1; // Без этого кнопка невидима (Opacity="0" в XAML)
+				}
                 if (btnCancel.Visibility != Visibility.Hidden)
                 {
                     btnCancel.Visibility = Visibility.Hidden;
